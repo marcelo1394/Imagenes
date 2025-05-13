@@ -243,7 +243,7 @@ html {
   width: 85%;
   height: 350px;
   margin: 0 auto;
-  margin-bottom: 5px;
+  margin-bottom: 30px;
   border-top: 3px solid #7c727297;
   border-bottom: 3px solid #7c727297;
 }
@@ -251,7 +251,7 @@ html {
 .muestra {
   display: flex;
   width: 85%;
-  height: 700px;
+  height: 900px;
   margin: 0 auto;
   margin-bottom: 30px;
   border-bottom: 3px solid #7c727297;
@@ -300,19 +300,66 @@ html {
 }
 .recuadro3 {
   border: 3px solid #f4be0b97;
-  width: 45%;
-  height: 75%;
-  margin-left: 0px;
-  margin-right: 0%;
+  width: 50%;
+  height: 55%;
+  margin-right: 35px;
   border-radius: 30px;
 }
 .imgrecu3 {
   width: 100%;
-  height: 80%;
+  height: 90%;
   justify-content: center;
   align-items: center;
+  display: flex;
 }
 .recuadro4 {
   border: 3px solid #f4be0b97;
-  position: fixed;
+  width: 45%;
+  height: 45%;
+  margin-right: 35px;
+  border-radius: 30px;
+  position: absolute;
+  top: 2050px;
+}
+.imgrecu4 {
+  width: 100%;
+  height: 90%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.recuadro5 {
+  border: 3px solid #f4be0b97;
+  width: 36%;
+  height: 37%;
+  margin-right: 35px;
+  border-radius: 30px;
+  position: absolute;
+  top: 2120px;
+  right: 145px;
+}
+.imgrecu5 {
+  width: 100%;
+  height: 90%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.final {
+  background-color: #8f8989a6;
+  width: 100%;
+  height: 300px;
+  margin-top: 30px;
+}
+.texfinal {
+  background-color: #2a2a2aa6;
+  width: 100%;
+  height: 30px;
+  margin-top: 95px;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+.imgfinal {
+  display: flex;
 }

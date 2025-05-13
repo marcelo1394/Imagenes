@@ -66,13 +66,15 @@ html {
     width: 85%;
     height: 350px;
     border-bottom: 3px solid #e7e409e7;
-    padding-bottom: 380px
+    padding-bottom: 380px;
+    
 }
 
 .izquierdo {
     display: flex;
     height: 280px;
     padding-top: 40px;
+    
 
 }
 
@@ -84,6 +86,9 @@ html {
     width: 400%;
     height: 250px;
     top: 0;
+    
+
+    
 }
 
 .derecho_imagen {
@@ -91,6 +96,8 @@ html {
     position: relative;
     width: 100%;
     height: 280px;
+   
+    
 }
 
 .derecho_menu {
@@ -98,17 +105,21 @@ html {
     height: 28%;
     display: flex;
     justify-content: space-around;
+    
 }
 
 .nav {
     display: flex;
     position: relative;
+    
+    
 }
 
 .menu2 {
     display: flex;
     font-size: 20px;
     gap: 8px;
+    
 }
 
 .menu2 li {
@@ -116,6 +127,7 @@ html {
     margin: 10px;
     font-family: Open Sans Light;
     /* POR DESCARGAR */
+    
 }
 
 .menu2 li a {
