@@ -346,20 +346,144 @@ html {
   display: flex;
 }
 .final {
-  background-color: #8f8989a6;
+  background-color: #eaeaea;
   width: 100%;
-  height: 300px;
+  height: 450px;
   margin-top: 30px;
 }
 .texfinal {
-  background-color: #2a2a2aa6;
+  background-color: #686867;
   width: 100%;
   height: 30px;
-  margin-top: 95px;
+  margin-top: 60px;
+  display: flex;
   justify-content: center;
   align-items: center;
   color: #fff;
 }
-.imgfinal {
+.imgfinal1 {
   display: flex;
+
+  width: 50%;
+  height: 80%;
+  justify-content: center;
+  align-items: center;
+  gap: 160px;
+  margin-left: 460px;
+}
+.modal::backdrop {
+  background-color: #eaeaea7a;
+}
+.modal {
+  width: 45%;
+  height: 51%;
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  box-shadow: 0 2px 2px rgba(254, 251, 251, 0.896);
+}
+.stilomodal {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+h2 {
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #555;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.btn-submit {
+  background-color: #f7e869ea;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+  transition: background-color 0.3s;
+}
+
+.btn-submit:hover {
+  background-color: #ffc933bd;
+}
+
+.request-label {
+  font-weight: bold;
+  margin-top: 20px;
+  color: #333;
+}
+.form2 {
+  margin-bottom: 10px;
+  width: 420px;
+}
+.intform2 {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 40px;
+  font-size: 18px;
+  box-sizing: border-box;
+  border: none;
+}
+.btnform2 {
+  background-color: #f7e869ea;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 60%;
+  transition: background-color 0.3s;
+}
+.btnform2:hover {
+  background-color: #ffc933bd;
+}
+.text_form2 {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.container_follow {
+  display: flex;
+  margin-top: 15px;
+}
+.follow {
+  margin-top: 20px;
+  font-size: 20px;
+}
+.follow_img {
+  margin: 22px 0 0 40px;
 }
