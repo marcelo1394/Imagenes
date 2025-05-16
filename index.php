@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -48,7 +49,7 @@
           <div class="nav">
             <ul class="menu2">
               <li><a href="#Home">HOME</a></li>
-              <li><a href="products.html">PRODUCTS</a></li>
+              <li><a href="products.php">PRODUCTS</a></li>
               <li><a href="#Proyectos">RESOURCES</a></li>
               <li><a href="#contacto">ABOUT US</a></li>
               <li><a href="#contacto">HOW WE MADE</a></li>
