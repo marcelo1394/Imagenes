@@ -65,7 +65,7 @@ html {
     margin: 0 auto;
     width: 85%;
     height: 350px;
-    border-bottom: 3px solid #e7e409e7;
+    border-bottom: 3px solid #ffe262;
     padding-bottom: 380px;
     
 }
@@ -74,8 +74,6 @@ html {
     display: flex;
     height: 280px;
     padding-top: 40px;
-    
-
 }
 
 .izquierdo_imagen {
@@ -85,19 +83,14 @@ html {
 .derecho {
     width: 400%;
     height: 250px;
-    top: 0;
-    
-
-    
+    top: 0;    
 }
 
 .derecho_imagen {
     display: flex;
     position: relative;
     width: 100%;
-    height: 280px;
-   
-    
+    height: 280px;  
 }
 
 .derecho_menu {
@@ -183,7 +176,6 @@ html {
 
 }
 .category_izquierda {
-    /* background-color: aqua; */
     width: 20%;
     height: 250px;
 }
@@ -239,7 +231,6 @@ html {
     width: 80%;
 
 }
-
 
 /* THINK DIFFERENT */
 
