@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario de Solicitud</title>
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        background-color: #f5f5f5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        margin: 0;
+      }
+
+      .form-container {
+        background-color: white;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        max-width: 400px;
+      }
+
+      h2 {
+        color: #333;
+        margin-bottom: 20px;
+        text-align: center;
+      }
+
+      .form-group {
+        margin-bottom: 20px;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 8px;
+        font-weight: bold;
+        color: #555;
+      }
+
+      input[type="text"],
+      input[type="email"],
+      textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        font-size: 16px;
+        box-sizing: border-box;
+      }
+
+      textarea {
+        resize: vertical;
+        min-height: 100px;
+      }
+
+      .checkbox-group {
+        margin-bottom: 20px;
+      }
+
+      .checkbox-label {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+        cursor: pointer;
+      }
+
+      .checkbox-label input {
+        margin-right: 10px;
+      }
+
+      .btn-submit {
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        padding: 12px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        width: 100%;
+        transition: background-color 0.3s;
+      }
+
+      .btn-submit:hover {
+        background-color: #45a049;
+      }
+
+      .request-label {
+        font-weight: bold;
+        margin-top: 20px;
+        color: #333;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="form-container">
+      <h2>Solicitud de Cotización</h2>
+
+      <form>
+        <div class="form-group">
+          <label for="name">Nombre:</label>
+          <input
+            type="text"
+            id="name"
+            placeholder="Ingresa tu nombre completo"
+          />
+        </div>
+
+        <div class="checkbox-group">
+          <label class="checkbox-label">
+            <input type="checkbox" /> Solicitud de cotización
+          </label>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Correo:</label>
+          <input
+            type="email"
+            id="email"
+            placeholder="Ingresa tu correo electrónico"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="request" class="request-label">Solicitud:</label>
+          <textarea
+            id="request"
+            placeholder="Describe tu solicitud aquí"
+          ></textarea>
+        </div>
+
+        <button type="submit" class="btn-submit">Enviar</button>
+      </form>
+    </div>
+  </body>
+</html>

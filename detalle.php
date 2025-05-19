@@ -1,13 +1,43 @@
+<?php
+include_once 'conexion.php';
+
+// Obtener el valor de 'numero' desde la URL
+$numero = isset($_GET['numero']) ? $conn->real_escape_string($_GET['numero']) : '';
+
+// Verificar que el número no esté vacío
+if (empty($numero)) {
+    die("Número de producto no especificado.");
+}
+
+// Consulta usando 'numero' en lugar de 'id'
+$sql = "SELECT * FROM productos WHERE numero = '$numero'";
+$result = $conn->query($sql);
+
+// Verificar si la consulta fue exitosa
+if (!$result) {
+    die("Error en la consulta: " . $conn->error);
+}
+
+// Verificar si se encontró el producto
+if ($result->num_rows === 0) {
+    die("Producto no encontrado.");
+}
+
+// Obtener los datos del producto
+$producto = $result->fetch_assoc();
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/products.css" />
-    <title>Imagrafic/Products</title>
-  </head>
-
-  <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/products.css" />
+    <title>Imagrafic/Products/Details</title>
+</head>
+<body>
     <div class="header">
       <ul class="redes">
         <li>
@@ -47,8 +77,8 @@
         <div class="derecho_menu">
           <div class="nav">
             <ul class="menu2">
-              <li><a href="/index.html">HOME</a></li>
-              <li><a href="/products.html">PRODUCTS</a></li>
+              <li><a href="index.php">HOME</a></li>
+              <li><a href="products.php">PRODUCTS</a></li>
               <li><a href="#Proyectos">RESOURCES</a></li>
               <li><a href="#contacto">ABOUT US</a></li>
               <li><a href="#contacto">HOW WE MADE</a></li>
@@ -58,27 +88,10 @@
         </div>
       </div>
     </div>
-    <div class="category">
-      <div class="category_izquierda">
-        <ul class="category_izquierda_ul1">
-          <li><a href="/index.html">HOME</a></li>
-          <li><a href="/products.html">PRODUCTS</a></li>
-        </ul>
-        <p class="category_izquierda_p">CATEGORIES</p>
-        <ul class="category_izquierda_ul2">
-          <li><a href="#">Bags</a></li>
-          <li><a href="#">Backpacks</a></li>
-          <li><a href="#">Pouches</a></li>
-          <li><a href="#">Tote bags</a></li>
-          <li><a href="#">Drawstring bags</a></li>
-          <li><a href="#">Baskets</a></li>
-          <li><a href="#">Cloths</a></li>
-        </ul>
-      </div>
-      <div class="category_derecha"></div>
-    </div>
-    <!-- <div class="texini">
-        <img width="100%" src="img/10.png" alt="" />
-    </div> -->
-  </body>
+
+    <h1><?= htmlspecialchars($producto['nombre']) ?></h1>
+    <img src="productsimg/<?= htmlspecialchars($producto['imagen']) ?>.png" alt="">
+    <p><?= htmlspecialchars($producto['numero']) ?></p>
+    
+</body>
 </html>

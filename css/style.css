@@ -348,7 +348,7 @@ html {
 .final {
   background-color: #eaeaea;
   width: 100%;
-  height: 300px;
+  height: 450px;
   margin-top: 30px;
 }
 .texfinal {
@@ -363,22 +363,37 @@ html {
 }
 .imgfinal1 {
   display: flex;
+<<<<<<< HEAD
   background-color: #e9f810;
   width: 10%;
   height: 80%;
   justify-content: center;
   align-items: center;
+=======
+
+  width: 50%;
+  height: 80%;
+  justify-content: center;
+  align-items: center;
+  gap: 160px;
+  margin-left: 460px;
+>>>>>>> d2f9b996f717245a43790665c8317b5d214e35af
 }
 .modal::backdrop {
   background-color: #eaeaea7a;
 }
 .modal {
   width: 45%;
+<<<<<<< HEAD
   height: 35%;
+=======
+  height: 51%;
+>>>>>>> d2f9b996f717245a43790665c8317b5d214e35af
   border-radius: 10px;
   position: absolute;
   top: 50%;
   left: 25%;
+<<<<<<< HEAD
 }
 .stilomodal {
   display: flex;
@@ -386,4 +401,111 @@ html {
   align-items: center;
   width: 100%;
   height: 100%;
+=======
+  box-shadow: 0 2px 2px rgba(254, 251, 251, 0.896);
+}
+.stilomodal {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+h2 {
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #555;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.btn-submit {
+  background-color: #f7e869ea;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+  transition: background-color 0.3s;
+}
+
+.btn-submit:hover {
+  background-color: #ffc933bd;
+}
+
+.request-label {
+  font-weight: bold;
+  margin-top: 20px;
+  color: #333;
+}
+.form2 {
+  margin-bottom: 10px;
+  width: 420px;
+}
+.intform2 {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 40px;
+  font-size: 18px;
+  box-sizing: border-box;
+  border: none;
+}
+.btnform2 {
+  background-color: #f7e869ea;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 60%;
+  transition: background-color 0.3s;
+}
+.btnform2:hover {
+  background-color: #ffc933bd;
+}
+.text_form2 {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.container_follow {
+  display: flex;
+  margin-top: 15px;
+}
+.follow {
+  margin-top: 20px;
+  font-size: 20px;
+}
+.follow_img {
+  margin: 22px 0 0 40px;
+>>>>>>> d2f9b996f717245a43790665c8317b5d214e35af
 }
