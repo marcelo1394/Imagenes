@@ -346,20 +346,44 @@ html {
   display: flex;
 }
 .final {
-  background-color: #8f8989a6;
+  background-color: #eaeaea;
   width: 100%;
   height: 300px;
   margin-top: 30px;
 }
 .texfinal {
-  background-color: #2a2a2aa6;
+  background-color: #686867;
   width: 100%;
   height: 30px;
-  margin-top: 95px;
+  margin-top: 60px;
+  display: flex;
   justify-content: center;
   align-items: center;
   color: #fff;
 }
-.imgfinal {
+.imgfinal1 {
   display: flex;
+  background-color: #e9f810;
+  width: 10%;
+  height: 80%;
+  justify-content: center;
+  align-items: center;
+}
+.modal::backdrop {
+  background-color: #eaeaea7a;
+}
+.modal {
+  width: 45%;
+  height: 35%;
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  left: 25%;
+}
+.stilomodal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
 }
