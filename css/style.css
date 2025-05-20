@@ -63,6 +63,8 @@ html {
   margin: 0 auto;
   width: 85%;
   height: 350px;
+  padding-bottom: 380px;
+  border-bottom: 3px solid #ffe262;
 }
 
 .izquierdo {
@@ -164,6 +166,7 @@ html {
   margin: 0 auto;
   width: 85%;
   height: 500px;
+  margin-top: 15px;
   margin-bottom: 10px;
   overflow: hidden;
 }

@@ -66,27 +66,27 @@
 
         <form>
           <div class="form-group">
-            <label for="name">Nombre:</label>
+            <label for="name">Name:</label>
             <input
               type="text"
               id="name"
-              placeholder="Ingresa tu nombre completo" />
+              placeholder="Enter your full name" />
           </div>
           <div class="form-group">
-            <label for="email">Correo:</label>
+            <label for="email">Email:</label>
             <input
               type="email"
               id="email"
-              placeholder="Ingresa tu correo electrónico" />
+              placeholder="Enter your email" />
           </div>
           <div class="form-group">
-            <label for="request" class="request-label">Solicitud:</label>
+            <label for="request" class="request-label">application:</label>
             <textarea
               id="request"
-              placeholder="Describe tu solicitud aquí"></textarea>
+              placeholder="Describe your request here"></textarea>
           </div>
         </form>
-        <button id="btnenviar" class="btn-submit">Enviar</button>
+        <button id="btnenviar" class="btn-submit">Send</button>
       </div>
     </dialog>
   </div>
@@ -161,7 +161,7 @@
             <input class="intform2" id="email" placeholder="Your Company" />
           </div>
         </form>
-        <button id="btnenviar" class="btnform2">Enviar</button>
+        <button id="btnenviar" class="btnform2">Send</button>
         <div class="container_follow">
           <h4 class="follow">Follow us on:</h4>
           <div class="follow_img">
