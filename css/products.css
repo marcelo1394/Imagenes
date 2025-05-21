@@ -60,59 +60,61 @@ html {
 
 .menu {
   display: flex;
+  flex-wrap: wrap;
   margin: 0 auto;
-  width: 85%;
-  height: 350px;
+  width: 90%;
+  padding: 20px 0;
   border-bottom: 3px solid #ffe262;
-  padding-bottom: 380px;
 }
 
 .izquierdo {
+  flex: 1 1 100px;
   display: flex;
-  height: 280px;
-  padding-top: 40px;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
 }
 
 .izquierdo_imagen {
-  height: 300px;
+  max-height: 200px;
+  width: auto;
 }
 
 .derecho {
-  width: 400%;
-  height: 250px;
-  top: 0;
+  flex: 2 1 300px;
+  padding: 10px;
 }
 
-.derecho_imagen {
-  display: flex;
-  position: relative;
+.derecho_imagen img {
   width: 100%;
-  height: 280px;
+  height: auto;
+  display: block;
 }
 
 .derecho_menu {
-  top: 15px;
-  height: 28%;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
 }
 
 .nav {
-  display: flex;
-  position: relative;
+  width: 100%;
 }
 
 .menu2 {
   display: flex;
-  font-size: 20px;
-  gap: 8px;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-size: 18px;
+  gap: 15px;
+  padding: 0;
 }
 
 .menu2 li {
   list-style: none;
-  margin: 10px;
-  font-family: Open Sans Light;
-  /* POR DESCARGAR */
+  margin: 8px;
+  font-family: "Open Sans", sans-serif;
 }
 
 .menu2 li a {
@@ -122,39 +124,79 @@ html {
 
 .menu2 li:not(:last-child)::after {
   content: "|";
-  margin-left: 65px;
+  margin-left: 20px;
   color: #ffe262;
 }
 
 .boton {
-  position: relative;
-  top: -20px;
   border: none;
   color: white;
-  font-size: 30px;
-  padding: 14px 28px;
+  font-size: 18px;
+  padding: 10px 20px;
   cursor: pointer;
-  border-radius: 100px;
+  border-radius: 50px;
   transition: transform 0.3s ease-in-out;
-  /* Transición suave del efecto de pulsación */
 }
 
 .boton:hover {
   background-color: #ffee00;
-  /* Cambia el color al pasar el cursor sobre el botón */
 }
 
 .boton:active {
   transform: scale(0.9);
-  /* Reduce ligeramente el tamaño del botón cuando se hace clic */
 }
 
 .primary {
   background-image: linear-gradient(to right, #f7e869ea, #ffc933f5);
 }
 
-.primary:hover {
-  background-image: linear-gradient(to right, #f7e869ea, #ffc933f5);
+/* RESPONSIVE RULES */
+
+@media (max-width: 768px) {
+  .menu2 {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .menu2 li:not(:last-child)::after {
+    content: "";
+  }
+
+  .boton {
+    font-size: 16px;
+    padding: 10px 16px;
+  }
+
+  .menu {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header {
+    justify-content: center;
+    padding: 10px;
+  }
+
+  .derecho_menu {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .redes li a img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .menu2 {
+    font-size: 16px;
+  }
+
+  .boton {
+    font-size: 14px;
+    padding: 8px 14px;
+  }
 }
 
 /* CATEGORY */

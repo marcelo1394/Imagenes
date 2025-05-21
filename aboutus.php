@@ -45,7 +45,6 @@
             <li><a href="#Proyectos">RESOURCES</a></li>
             <li><a href="aboutus.php">ABOUT US</a></li>
             <li><a href="howwemade.php">HOW WE MADE</a></li>
-            <li><button class="boton primary">Request a Quote</button></li>
           </ul>
         </div>
       </div>
