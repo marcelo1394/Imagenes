@@ -5,6 +5,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/aboutus.css" />
+  <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
   <title>Imagrafic/About us</title>
 </head>
 
@@ -52,14 +60,171 @@
     </div>
   </div>
 
-  <header class="header2">
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h1 class="logo">IMAGR<span>APHIC</span></h1>
+          <p class="tagline">
+           The factory of great ideas
+          </p>
+        </div>
+      </div>
+    </section>
+    
+    <!-- About Section -->
+    <section class="about">
+      <div class="container">
+        <div class="section-title">
+          <h2>Welcome Our Company</h2>
+        </div>
+        <div class="about-content">
+          <div class="about-text">
+            <p>
+             We are a company focused on the production of promotional products of the best quality. We have more than<strong> 28 years of experience</strong> and we have the support of a large production plant with offset printing processes, textile, screen printing, digital printing, laser engraving, sewing and more.
+            </p>
+
+            <div class="highlight-box">
+              <p>
+               "One Stop Shop" for all your promotional product’s needs, we manufacture in house all our paper made and sewn products to guarantee the highest quality!
+              </p>
+            </div>
+
+            <p>
+              Our company can supply you with a whole souvenirs solution, we are manufacturers. Our in house designer team offers great new ideas. If you can imagine it, we can create it!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Capabilities Section -->
+    <section class="features">
+      <div class="container">
+        <div class="section-title">
+          <h2>Our Manufacturing Capabilities</h2>
+        </div>
+
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-cogs"></i>
+            </div>
+            <h3>Custom design capabilities</h3>
+           
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-tachometer-alt"></i>
+            </div>
+            <h3>Efficient Workflow</h3>
+            </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-industry"></i>
+            </div>
+            <h3>Direct from the factory</h3>
+        
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-boxes"></i>
+            </div>
+            <h3>Small and large-quantity orders options</h3>
+           
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-puzzle-piece"></i>
+            </div>
+            <h3>Experts in totes and bags</h3>
+            </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-project-diagram"></i>
+            </div>
+            <h3>Edge to edge printing technology</h3>
+            
+          </div>
+           <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-leaf"></i>
+            </div>
+            <h3>Eco-Conscious</h3>
+            <p>
+              Sustainable production methods and materials that reduce
+              environmental impact.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-pencil-ruler"></i>
+            </div>
+            <h3>Custom Designs</h3>
+            <p>
+              Creative solutions tailored to your specific brand identity and
+              campaign goals.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-lightbulb"></i>
+            </div>
+            <h3>Innovative Processes</h3>
+            <p>
+              Cutting-edge techniques that set your products apart from the
+              competition.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-eye"></i>
+            </div>
+            <h3>Designer Oversight</h3>
+            <p>
+              Owner-operated with hands-on quality control at every production
+              stage.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-tshirt"></i>
+            </div>
+            <h3>Fashion Forward</h3>
+            <p>Trend-aware products that resonate with modern audiences.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-sliders-h"></i>
+            </div>
+            <h3>Full Customization</h3>
+            <p>
+              Complete control over materials, colors, finishes and branding
+              elements.
+            </p>
+          </div>
+        </div>
+      </div>
+      
+    </section>
+    
+
+  <!-- <header class="header2">
     <div class="lightbulb">
       <img src="img/BANNER-PRINCIPAL--03.png" alt="Infographic Logo">
       <p class="slogan">The factory of great ideas<br><span>SINCE 1989</span></p>
     </div>
-  </header>
+  </header> -->
 
-  <main>
+  <!-- <main>
     <section class="welcome welcome fade-in">
       <h2>Welcome</h2>
       <p>Thanks for choosing us</p>
@@ -84,10 +249,10 @@
         <li>Edge to edge printing technology.</li>
 
         <!-- Separador -->
-        <div class="advantages-title">OUR ADVANTAGES:</div>
+        <!-- <div class="advantages-title">OUR ADVANTAGES:</div> -->
 
         <!-- Lista adicional -->
-        <li> Low environmental impact</li>
+        <!-- <li> Low environmental impact</li>
         <li> Exclusive designs</li>
         <li> Innovative productive processes</li>
         <li> Different tagging techniques</li>
@@ -95,13 +260,9 @@
         <li>Custom products</li>
       </ul>
       <p class="call">Call us to see how we can help you with your next Project.</p>
-    </section>
-
-    <!-- <section class="team">
-      <h3>Our Team</h3>
-      <img src="team-photo.jpg" alt="Team photo">
     </section> -->
-  </main>
+
+  <!-- </main>
     <div class="final">
     <div class="imgfinal1">
       <img width="180px" src="img/bombillo.png" alt="" />
@@ -138,7 +299,7 @@
     <div class="texfinal">
       Copyright 2025 Imagraphic - All Rights Reserved
     </div>
-  </div>
+  </div> -->
 
 
 
