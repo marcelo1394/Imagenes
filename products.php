@@ -158,11 +158,40 @@ $resultado = $conn->query($sql);
             <li><a href="#Proyectos">RESOURCES</a></li>
             <li><a href="aboutus.php">ABOUT US</a></li>
             <li><a href="howwemade.php">HOW WE MADE</a></li>
-            <li><button class="boton primary">Request a Quote</button></li>
+            <li><button id="btnabrir" class="boton primary">Request a Quote</button></li>
           </ul>
         </div>
       </div>
     </div>
+     <dialog id="modal" class="modal">
+      <div class="stilomodal">
+        <h2>Request a Quote</h2>
+
+        <form>
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input
+              type="text"
+              id="name"
+              placeholder="Enter your full name" />
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              id="email"
+              placeholder="Enter your email address" />
+          </div>
+          <div class="form-group">
+            <label for="request" class="request-label">application:</label>
+            <textarea
+              id="request"
+              placeholder="Describe your request here"></textarea>
+          </div>
+        </form>
+        <button id="btnenviar" class="btn-submit">Send</button>
+      </div>
+    </dialog>
   </div>
 
   <div class="category">
@@ -249,7 +278,9 @@ $resultado = $conn->query($sql);
     <div class="texfinal">
       Copyright 2025 Imagraphic - All Rights Reserved
     </div>
+  
   </div>
+    <script src="funciones.js"></script>
   
 </body>
 
