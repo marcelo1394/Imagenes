@@ -88,7 +88,7 @@
 .menu2 li {
   list-style: none;
   margin: 8px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 .menu2 li a {
@@ -117,7 +117,7 @@
 }
 
 .boton:active {
-  transform: scale(0.90);
+  transform: scale(0.9);
 }
 
 .primary {
@@ -173,7 +173,6 @@
   }
 }
 
-
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -228,8 +227,6 @@ body {
   font-weight: bold;
   letter-spacing: 1px;
 }
-
-
 
 /* Contenedor principal de la sección welcome */
 .welcome {
@@ -308,7 +305,6 @@ body {
   margin-bottom: 15px;
 }
 
-
 /* Llamado a la acción */
 .call {
   margin-top: 25px;
@@ -327,4 +323,73 @@ body {
   to {
     opacity: 1;
   }
+}
+/*FOOTER */
+.final {
+  background-color: #eaeaea;
+  width: 100%;
+  height: 450px;
+  margin-top: 30px;
+}
+.texfinal {
+  background-color: #686867;
+  width: 100%;
+  height: 30px;
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+.imgfinal1 {
+  display: flex;
+
+  width: 50%;
+  height: 80%;
+  justify-content: center;
+  align-items: center;
+  gap: 160px;
+  margin-left: 460px;
+}
+.form2 {
+  margin-bottom: 10px;
+  width: 420px;
+}
+.intform2 {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 40px;
+  font-size: 18px;
+  box-sizing: border-box;
+  border: none;
+}
+.btnform2 {
+  background-color: #f7e869ea;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 60%;
+  transition: background-color 0.3s;
+}
+.btnform2:hover {
+  background-color: #ffc933bd;
+}
+.text_form2 {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.container_follow {
+  display: flex;
+  margin-top: 15px;
+}
+.follow {
+  margin-top: 20px;
+  font-size: 20px;
+}
+.follow_img {
+  margin: 22px 0 0 40px;
 }

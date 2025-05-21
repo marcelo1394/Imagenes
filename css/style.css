@@ -166,6 +166,7 @@ html {
   margin: 0 auto;
   width: 85%;
   height: 500px;
+  margin-top: 15px;
   margin-bottom: 10px;
   overflow: hidden;
 }
