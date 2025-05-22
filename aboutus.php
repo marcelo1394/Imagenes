@@ -138,25 +138,22 @@
             <div class="feature-icon">
               <i class="fas fa-puzzle-piece"></i>
             </div>
-            <h3>Experts in totes and bags</h3>
+            <h3>Exclusive designs</h3>
             </div>
 
           <div class="feature-card">
             <div class="feature-icon">
               <i class="fas fa-project-diagram"></i>
             </div>
-            <h3>Edge to edge printing technology</h3>
+            <h3>Possibility of special finishes </h3>
             
           </div>
            <div class="feature-card">
             <div class="feature-icon">
               <i class="fas fa-leaf"></i>
             </div>
-            <h3>Eco-Conscious</h3>
-            <p>
-              Sustainable production methods and materials that reduce
-              environmental impact.
-            </p>
+            <h3>Low environmental impact</h3>
+           
           </div>
 
           <div class="feature-card">
@@ -164,21 +161,15 @@
               <i class="fas fa-pencil-ruler"></i>
             </div>
             <h3>Custom Designs</h3>
-            <p>
-              Creative solutions tailored to your specific brand identity and
-              campaign goals.
-            </p>
+            
           </div>
 
           <div class="feature-card">
             <div class="feature-icon">
               <i class="fas fa-lightbulb"></i>
             </div>
-            <h3>Innovative Processes</h3>
-            <p>
-              Cutting-edge techniques that set your products apart from the
-              competition.
-            </p>
+            <h3>Innovative productive processes</h3>
+           
           </div>
 
           <div class="feature-card">
@@ -186,83 +177,43 @@
               <i class="fas fa-eye"></i>
             </div>
             <h3>Designer Oversight</h3>
-            <p>
-              Owner-operated with hands-on quality control at every production
-              stage.
-            </p>
+            
           </div>
 
           <div class="feature-card">
             <div class="feature-icon">
               <i class="fas fa-tshirt"></i>
             </div>
-            <h3>Fashion Forward</h3>
-            <p>Trend-aware products that resonate with modern audiences.</p>
+            <h3>Possibility of special finishes </h3>
+          
           </div>
 
           <div class="feature-card">
             <div class="feature-icon">
               <i class="fas fa-sliders-h"></i>
             </div>
-            <h3>Full Customization</h3>
-            <p>
-              Complete control over materials, colors, finishes and branding
-              elements.
-            </p>
+            <h3>Custom products </h3>
+            
           </div>
         </div>
       </div>
       
     </section>
-    
-
-  <!-- <header class="header2">
-    <div class="lightbulb">
-      <img src="img/BANNER-PRINCIPAL--03.png" alt="Infographic Logo">
-      <p class="slogan">The factory of great ideas<br><span>SINCE 1989</span></p>
-    </div>
-  </header> -->
-
-  <!-- <main>
-    <section class="welcome welcome fade-in">
-      <h2>Welcome</h2>
-      <p>Thanks for choosing us</p>
-      <p class="intro">
-        "One Stop Shop" for all your promotional product’s needs, we manufacture in house all our paper made and sewn products to guarantee the highest quality!
-      </p>
-      <p>
-        We are a company focused on the production of promotional products of the best quality. We have more than 28 years of experience and we have the support of a large production plant with offset printing processes, textile, screen printing, digital printing, laser engraving, sewing and more.
-      </p>
-      <p>
-        Our company can supply you with a whole souvenirs solution, we are manufacturers. Our in house designer team offers great new ideas. If you can imagine it, we can create it!
-      </p>
-
-      <ul class="features">
-        <li>Custom design capabilities.</li>
-        <li>No set up fees.</li>
-        <li>Direct from the factory.</li>
-        <li>Small and large-quantity orders options.</li>
-        <li>In house samplemakers.</li>
-        <li>Ability to adapt the product to any budget needs.</li>
-        <li>Experts in totes and bags.</li>
-        <li>Edge to edge printing technology.</li>
-
-        <!-- Separador -->
-        <!-- <div class="advantages-title">OUR ADVANTAGES:</div> -->
-
-        <!-- Lista adicional -->
-        <!-- <li> Low environmental impact</li>
-        <li> Exclusive designs</li>
-        <li> Innovative productive processes</li>
-        <li> Different tagging techniques</li>
-        <li> Possibility of special finishes</li>
-        <li>Custom products</li>
-      </ul>
-      <p class="call">Call us to see how we can help you with your next Project.</p>
-    </section> -->
-
-  <!-- </main>
-    <div class="final">
+     <!-- CTA Section -->
+    <section class="cta-section">
+      <div class="container">
+        <h2 class="cta-title">
+          Call us to see how we can help you with your next Project.
+        </h2>
+        <p class="cta-subtitle">
+          Our team is ready to help you 
+        </p>
+        <a href="tel:+1234567890" class="cta-button">
+          <i class="fas fa-phone-alt"></i> Contact Us Today
+        </a>
+      </div>
+    </section>
+     <div class="final">
     <div class="imgfinal1">
       <img width="180px" src="img/bombillo.png" alt="" />
       <div class="form2">
@@ -278,7 +229,7 @@
             <input class="intform2" id="email" placeholder="Your Company" />
           </div>
         </form>
-        <button id="btnenviar" class="btnform2">Send</button>
+        <button id="btnenviar" class="btnform2">Enviar</button>
         <div class="container_follow">
           <h4 class="follow">Follow us on:</h4>
           <div class="follow_img">
@@ -298,7 +249,8 @@
     <div class="texfinal">
       Copyright 2025 Imagraphic - All Rights Reserved
     </div>
-  </div> -->
+
+ 
 
 
 
