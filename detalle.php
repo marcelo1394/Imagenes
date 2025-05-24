@@ -99,7 +99,7 @@ $producto = $result->fetch_assoc();
       <img src="productsimg/<?= htmlspecialchars($producto['imagen']) ?>.png" alt="">
     </div>
     <div class="product-info">
-      <div class="product-title">Small tote bag</div>
+      <div class="product-title"><?= htmlspecialchars($producto['nombre']) ?></div>
       <!-- <div class="product-code">Code T10</div> -->
       
       <div class="product-code">
@@ -107,32 +107,32 @@ $producto = $result->fetch_assoc();
       <?=htmlspecialchars($producto['numero']) ?>
       </div>
       <div class="product-description">
-        Your brand name will go everywhere this shopping bag goes! It measures 13” W x 13” H x 5” Gussets x 18” Handles and is made of 100 GSM non-woven polypropylene. This bag is recyclable and reusable. High quality and hand-sewn. There is no limit to what you can do with this full color bag! Creating an ideal product for retail stores, banks, colleges and libraries alike! *The products are sublimated and then the product sewn.
+        <?=htmlspecialchars($producto['descripcion']) ?>
       </div>
 
       <div class="accordion">
         <div class="accordion-header">Prices</div>
-        <div class="accordion-content">Pricing information here...</div>
+        <div class="accordion-content"><img src="productsimg/<?= htmlspecialchars($producto['imagen']) ?>.png" alt=""></div>
       </div>
 
       <div class="accordion">
         <div class="accordion-header">Product details</div>
-        <div class="accordion-content">Details here...</div>
+        <div class="accordion-content"><?=htmlspecialchars($producto['Product details']) ?></div>
       </div>
 
       <div class="accordion">
         <div class="accordion-header">Imprint details</div>
-        <div class="accordion-content">Imprint information here...</div>
+        <div class="accordion-content"><?=htmlspecialchars($producto['Imprint details']) ?></div>
       </div>
 
       <div class="accordion">
         <div class="accordion-header">Shipping details</div>
-        <div class="accordion-content">Shipping info here...</div>
+        <div class="accordion-content"><?=htmlspecialchars($producto['Shipping details']) ?></div>
       </div>
 
       <div class="accordion">
         <div class="accordion-header">Legal details</div>
-        <div class="accordion-content">Legal info here...</div>
+        <div class="accordion-content"><?=htmlspecialchars($producto['Legal details']) ?></div>
       </div>
     </div>
   </div>

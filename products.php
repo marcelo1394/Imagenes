@@ -196,8 +196,8 @@ $resultado = $conn->query($sql);
   <div class="category">
     <div class="category_izquierda">
       <ul class="category_izquierda_ul1">
-        <li><a href="/index.html">HOME</a></li>
-        <li><a href="/products.html">PRODUCTS</a></li>
+        <li><a href="index.php">HOME</a></li>
+        <li><a href="products.php">PRODUCTS</a></li>
       </ul>
       <p class="category_izquierda_p">CATEGORIES</p>
       <ul class="category_izquierda_ul2">
