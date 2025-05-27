@@ -366,7 +366,6 @@ body {
   color: var(--gray);
 }
 
-
 /*FOOTER */
 .final {
   background-color: #eaeaea;
@@ -407,6 +406,28 @@ body {
   box-sizing: border-box;
   border: none;
 }
+.formmjs {
+  justify-content: center;
+  align-items: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 200;
+  margin-left: 120px;
+  margin-bottom: 5px;
+  animation: desaparecer 5s forwards;
+}
+@keyframes desaparecer {
+  0% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
 .btnform2 {
   background-color: #f7e869ea;
   color: white;
@@ -422,7 +443,7 @@ body {
   background-color: #ffc933bd;
 }
 .text_form2 {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   margin-top: 20px;
 }
 .container_follow {

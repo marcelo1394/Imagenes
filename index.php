@@ -20,7 +20,7 @@
       if (count($errors)== 0){
         $msj="De: $nombre<br> Correo:<a href='mailto:$email'>$email</a><br>";
         $msj.="Asunto: Solicitud de cotización<br>";
-        $msj.="Mensaje: $request<br>";
+        $msj.="empresa: $request<br>";
         $msj.="<br>";
         $mail = new PHPMailer(true);}
         try {
@@ -33,12 +33,12 @@
           $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
           $mail->Port = 465;
           $mail->setFrom('prueba@imagraphicusa.com', 'CONTACTO IMAGRAPHICUSA');
-          $mail->addAddress('sistemas@imagenesgraficas.com', 'CONTACTO IMAGRAPHICUSA');          
+          $mail->addAddress('prueba@imagraphicusa.com', 'CONTACTO IMAGRAPHICUSA');          
           $mail->isHTML(true);
           $mail->Subject = 'CONTACTO IMAGRAPHICUSA';
           $mail->Body    =utf8_decode($msj);
           $mail->send();
-          $respuesta = "mensaje enviado";
+          $respuesta = "MESSAGE SENT";
       }
       catch (Exception $e) {
         $respuesta = 'Mensaje '.$mail->ErrorInfo;
@@ -98,72 +98,17 @@
               <li><a href="#Proyectos">RESOURCES</a></li>
               <li><a href="aboutus.php">ABOUT US</a></li>
               <li><a href="howwemade.php">HOW WE MADE</a></li>
-              <li>
-                <button id="btnabrir" class="boton primary">
+                <li>
+                <a href="#formulario"><button id="btnabrir" class="boton primary" >
                   Request a Quote
-                </button>
+                </button></a>
               </li>
+              
             </ul>
           </div>
         </div>
       </div>
-      <dialog id="modal" class="modal">      
-        <div class="stilomodal">
-          <?php
-            if(isset($errors)){
-              if(count($errors) > 0){
-          ?>
-            <div class="row">
-              <div class="col-lag-6 col-md-12">
-                <div class="alert alert-danger alert-dismissible" role="alert">
-                  <?php
-                    foreach($errors as $error){
-                      echo $error.'<br>';
-                    }
-                  ?>
-                </div>
-              </div>
-            </div>
-          <?php
-            }}        
-          ?>
-          <h2>Request a Quote</h2>
-          <form method="POST" action="<?php echo htmlentities($_SERVER['PHP_SELF'])?>"autocomplete="off">
-            <div class="form-group">
-              <label for="name">Name:</label>
-              <input
-                type="text"
-                name="name"
-                id="name"
-                required
-                placeholder="Enter your full name" />
-            </div>
-            <div class="form-group">
-              <label for="email">Email:</label>
-              <input
-                type="text"
-                name="correo"
-                id="email"
-                required
-                placeholder="Enter your email" />
-            </div>
-            <div class="form-group">
-              <label for="request" class="request-label">application:</label>
-              <textarea
-                id="request" name="request" required
-                placeholder="Describe your request here"></textarea>
-            </div>
-            <button name="submit" type="submit"  class="btn-submit">Send</button>
-          </form>
-          <?php if(isset($respuesta)){?>
-              <div class="row">
-                <div class="col-lag-6 col-md-12">
-                <?php echo $respuesta; ?>
-                </div>
-              </div>
-          <?php }?>        
-        </div>
-      </dialog>
+     
     </div>
 
     <div class="slider_cont">
@@ -224,19 +169,49 @@
       <div class="imgfinal1">
         <img width="180px" src="img/bombillo.png" alt="" />
         <div class="form2">
+          <?php
+                if(isset($errors)){
+                if(count($errors) > 0){
+            ?>
+            <div class="row">
+              <div class="col-lag-6 col-md-12">
+                <div class="alert alert-danger alert-dismissible" role="alert">
+                  <?php
+                    foreach($errors as $error){
+                      echo $error.'<br>';
+                    }
+                  ?>
+                </div>
+              </div>
+            </div>
+          <?php
+            }}        
+          ?>
           <h1 class="text_form2">Subscribe now!</h1>
-          <form>
+            
+          <form id="formulario" method="POST" action="<?php echo htmlentities($_SERVER['PHP_SELF'])?>"autocomplete="off">
             <div class="form2">
-              <input class="intform2" id="name" placeholder="Your Name" />
+              <input class="intform2"   name="name"  placeholder="Your Name" required/>
             </div>
             <div class="form2">
-              <input class="intform2" id="email" placeholder="Your Email" />
+              <input class="intform2" name="correo"  required
+              placeholder="Your Email" />
             </div>
             <div class="form2">
-              <input class="intform2" id="email" placeholder="Your Company" />
+              <input class="intform2"  name="request"placeholder="Your Company" required />
             </div>
+            <?php if(isset($respuesta)){?>
+              <div class="formmjs">
+                
+                <?php echo $respuesta;
+                 ?>
+                
+                
+              </div>
+          <?php }?> 
+           <button name="submit" type="submit"  class="btnform2">Send</button>
           </form>
-          <button id="btnenviar" class="btnform2">Send</button>
+          
           <div class="container_follow">
             <h4 class="follow">Follow us on:</h4>
             <div class="follow_img">
