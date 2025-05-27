@@ -12,8 +12,6 @@ html {
 
 /* HEADER */
 
-
-
 .header {
   width: 100%;
   height: auto;
@@ -151,16 +149,20 @@ html {
 }
 
 @keyframes movimiento_slider {
-  0%, 20% {
+  0%,
+  20% {
     transform: translateX(0%);
   }
-  25%, 45% {
+  25%,
+  45% {
     transform: translateX(-100%);
   }
-  50%, 70% {
+  50%,
+  70% {
     transform: translateX(-200%);
   }
-  75%, 100% {
+  75%,
+  100% {
     transform: translateX(-300%);
   }
 }
@@ -398,7 +400,28 @@ textarea {
   font-size: 18px;
   border: none;
 }
-
+.formmjs {
+  justify-content: center;
+  align-items: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 200;
+  margin-left: 120px;
+  margin-bottom: 10px;
+  animation: desaparecer 5s forwards;
+}
+@keyframes desaparecer {
+  0% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
 .btnform2 {
   background-color: #f7e869ea;
   color: white;
