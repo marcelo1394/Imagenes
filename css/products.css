@@ -258,14 +258,14 @@ html {
 
 /* THINK DIFFERENT */
 
-.texini {
+
+ .texini {
   display: flex;
   width: 85%;
   height: 350px;
-  margin: 0 auto;
-  margin-bottom: 5px;
-  border-top: 1px solid #7c727297;
-  border-bottom: 1px solid #7c727297;
+  margin: 0 auto 30px;
+  border-top: 3px solid #7c727297;
+  border-bottom: 3px solid #7c727297;
 }
 
 /* FOOTER */
@@ -342,7 +342,9 @@ html {
 .follow_img {
   margin: 22px 0 0 40px;
 }
-/*VENTANA MODAL*/
+
+
+/* VENTANA MODAL */
 .modal::backdrop {
   background-color: #eaeaea7a;
 }
@@ -417,3 +419,20 @@ textarea {
   margin-top: 20px;
   color: #333;
 }
+
+@media (max-width: 768px) {
+   .texini {
+    height: auto;
+    flex-direction: column;
+  }
+  .category {
+    width: 0px;
+    height: 0px;
+  }
+  .final {
+     width: 0px;
+    height: 0px;
+  }
+  }
+
+

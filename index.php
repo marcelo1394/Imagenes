@@ -48,7 +48,6 @@
           <ul class="menu2">
             <li><a href="#Home">HOME</a></li>
             <li><a href="products.php">PRODUCTS</a></li>
-            <li><a href="#Proyectos">RESOURCES</a></li>
             <li><a href="aboutus.php">ABOUT US</a></li>
             <li><a href="howwemade.php">HOW WE MADE</a></li>
             <li>
@@ -113,7 +112,7 @@
         <a href=""><img width="180px" justify src="img/cotton-bag-t25.png" alt="" />
         </a>
       </div>
-      <div class="price">View $7.66</div>
+      <div class="price">View $9.95</div>
     </div>
     <div class="recuadro2">
       <div class="imgrecu2">

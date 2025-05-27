@@ -21,6 +21,7 @@ $sql = "SELECT * FROM productos $filtro_categoria LIMIT $inicio, $por_pagina";
 $resultado = $conn->query($sql);
 ?>
 
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -155,7 +156,6 @@ $resultado = $conn->query($sql);
           <ul class="menu2">
             <li><a href="index.php">HOME</a></li>
             <li><a href="products.php">PRODUCTS</a></li>
-            <li><a href="#Proyectos">RESOURCES</a></li>
             <li><a href="aboutus.php">ABOUT US</a></li>
             <li><a href="howwemade.php">HOW WE MADE</a></li>
           </ul>
