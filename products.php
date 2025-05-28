@@ -2,7 +2,7 @@
 include_once 'conexion.php';
 
 // Número de productos por página
-$por_pagina = 6;
+$por_pagina = 32;
 $pagina_actual = isset($_GET['pagina']) ? (int)$_GET['pagina'] : 1;
 $inicio = ($pagina_actual - 1) * $por_pagina;
 
@@ -28,15 +28,23 @@ $resultado = $conn->query($sql);
 <head>
 
   <style>
-    .grid-container {
+    /* .grid-container {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 70px;
       max-width: 1200px;
       margin: auto;
+    } */
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      /* 4 columnas fijas */
+      gap: 40px;
+      max-width: 1400px;
+      margin: auto;
     }
 
-    .card {
+    /* .card {
       background: white;
       padding: 15px;
       margin-top: 30px;
@@ -57,6 +65,27 @@ $resultado = $conn->query($sql);
 
     .card h3 {
       margin: 80px 0 5px;
+    } */
+    .card {
+      background: white;
+      padding: 15px;
+      border: 2px solid #ffe262;
+      text-align: center;
+      height: 420px;
+      width: 100%;
+      /* se ajusta automáticamente a su columna */
+      box-sizing: border-box;
+    }
+
+    .card img {
+      max-width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 6px;
+    }
+
+    .card h3 {
+      margin: 20px 0 5px;
     }
 
     .card p {
@@ -64,6 +93,7 @@ $resultado = $conn->query($sql);
       color: #666;
     }
 
+    /* 
     @media (max-width: 768px) {
       body {
         padding: 15px;
@@ -78,7 +108,35 @@ $resultado = $conn->query($sql);
       .card img {
         height: 100px;
       }
+    } */
+    @media (max-width: 1024px) {
+      .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .card {
+        height: 400px;
+      }
+
+      .card img {
+        height: 200px;
+      }
     }
+
+    @media (max-width: 600px) {
+      .grid-container {
+        grid-template-columns: 1fr;
+      }
+
+      .card {
+        height: 380px;
+      }
+
+      .card img {
+        height: 180px;
+      }
+    }
+
     .paginacion {
       text-align: center;
       margin-top: 30px;
@@ -162,7 +220,7 @@ $resultado = $conn->query($sql);
         </div>
       </div>
     </div>
-     <dialog id="modal" class="modal">
+    <dialog id="modal" class="modal">
       <div class="stilomodal">
         <h2>Request a Quote</h2>
 
@@ -236,51 +294,59 @@ $resultado = $conn->query($sql);
           </a>
         <?php endfor; ?>
       </div>
-    </div>
-  </div>
-  <div class="texini">
-    <img width="100%" src="img/10.png" alt="" />
-  </div>
-  <div class="final">
-    <div class="imgfinal1">
-      <img width="180px" src="img/bombillo.png" alt="" />
-      <div class="form2">
-        <h1 class="text_form2">Subscribe now!</h1>
-        <form>
+
+     
+    </div> <!-- cierre de .category_derecha -->
+    
+  </div> <!-- cierre de .category -->
+   <div class="texini">
+        <img width="100%" src="img/10.png" alt="" />
+      </div>
+
+      <div class="final">
+        <div class="imgfinal1">
+          <img width="180px" src="img/bombillo.png" alt="" />
           <div class="form2">
-            <input class="intform2" id="name" placeholder="Your Name" />
+            <h1 class="text_form2">Subscribe now!</h1>
+            <form>
+              <div class="form2">
+                <input class="intform2" id="name" placeholder="Your Name" />
+              </div>
+              <div class="form2">
+                <input class="intform2" id="email" placeholder="Your Email" />
+              </div>
+              <div class="form2">
+                <input class="intform2" id="email" placeholder="Your Company" />
+              </div>
+            </form>
+            <button id="btnenviar" class="btnform2">Enviar</button>
+            <div class="container_follow">
+              <h4 class="follow">Follow us on:</h4>
+              <div class="follow_img">
+                <a href="https://www.instagram.com/imagenes_graficas?igshid=di1ufcnwhc4f">
+                  <img width="40px" src="img/instagram.svg" alt="" />
+                </a>
+                <a href="https://www.facebook.com/imagenesgraficasbicsas/">
+                  <img width="40px" src="img/facebook.svg" alt="" />
+                </a>
+                <a href="https://co.pinterest.com/igraficas/?invite_code=624950ea13b548a7b1c680f4787bd4c9&sender=506162583028394334">
+                  <img width="40px" src="img/pinterest.svg" alt="" />
+                </a>
+              </div>
+            </div>
           </div>
-          <div class="form2">
-            <input class="intform2" id="email" placeholder="Your Email" />
-          </div>
-          <div class="form2">
-            <input class="intform2" id="email" placeholder="Your Company" />
-          </div>
-        </form>
-        <button id="btnenviar" class="btnform2">Enviar</button>
-        <div class="container_follow">
-          <h4 class="follow">Follow us on:</h4>
-          <div class="follow_img">
-            <a
-              href="https://www.instagram.com/imagenes_graficas?igshid=di1ufcnwhc4f"><img width="40px" src="img/instagram.svg" alt="" /></a>
-            <a href="https://www.facebook.com/imagenesgraficasbicsas/"><img width="40px" src="img/facebook.svg" alt="" /></a>
-            <a
-              href="https://co.pinterest.com/igraficas/?invite_code=624950ea13b548a7b1c680f4787bd4c9&sender=506162583028394334"><img width="40px" src="img/pinterest.svg" alt="" /></a>
+          <div class="footer_img">
+            <img width="400px" src="img/9.png" alt="" />
           </div>
         </div>
-      </div>
-      <div class="footer_img">
-        <img width="400px" src="img/9.png" alt="" />
-      </div>
-    </div>
 
-    <div class="texfinal">
-      Copyright 2025 Imagraphic - All Rights Reserved
-    </div>
-  
-  </div>
-    <script src="funciones.js"></script>
-  
+        <div class="texfinal">
+          Copyright 2025 Imagraphic - All Rights Reserved
+        </div>
+      </div>
+
+  <script src="funciones.js"></script>
+
 </body>
 
 </html>

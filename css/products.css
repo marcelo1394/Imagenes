@@ -76,7 +76,7 @@ html {
 }
 
 .izquierdo_imagen {
-  max-height: 200px;
+  max-height: 300px;
   width: auto;
 }
 
@@ -197,6 +197,11 @@ html {
     font-size: 14px;
     padding: 8px 14px;
   }
+
+  .izquierdo_imagen {
+    max-height: 220px;
+    width: auto;
+  }
 }
 
 /* CATEGORY */
@@ -205,7 +210,7 @@ html {
   display: flex;
   margin: 0 auto;
   width: 85%;
-  height: 1300px;
+  height: 3800px;
 }
 
 .category_izquierda {
@@ -218,35 +223,42 @@ html {
   font-size: 30px;
   gap: 8px;
 }
+
 .category_izquierda_ul1 li {
   list-style: none;
   margin: 40px 10px 40px 0px;
   font-family: Open Sans Light;
   /* POR DESCARGAR */
 }
+
 .category_izquierda_ul1 a {
   color: black;
   text-decoration: none;
 }
+
 .category_izquierda_ul1 li:not(:last-child)::after {
   content: "|";
   margin-left: 65px;
   color: #ffe262;
 }
+
 .category_izquierda_p {
   border-bottom: 1px solid #7c727297;
   padding-bottom: 10px;
   font-weight: bolder;
   font-size: 30px;
 }
+
 .category_izquierda_ul2 {
   margin-top: 10px;
   font-size: 30px;
 }
+
 .category_izquierda_ul2 li {
   margin: 15px auto;
   list-style: none;
 }
+
 .category_izquierda_ul2 li a {
   text-decoration: none;
   color: black;
@@ -254,14 +266,16 @@ html {
 
 .category_derecha {
   width: 80%;
+  margin-left: 50px;
+  margin-top: 30px;
 }
 
 /* THINK DIFFERENT */
 
 
- .texini {
+.texini {
   display: flex;
-  width: 85%;
+  width: 80%;
   height: 350px;
   margin: 0 auto 30px;
   border-top: 3px solid #7c727297;
@@ -276,6 +290,7 @@ html {
   height: 450px;
   margin-top: 30px;
 }
+
 .texfinal {
   background-color: #686867;
   width: 100%;
@@ -286,6 +301,7 @@ html {
   align-items: center;
   color: #fff;
 }
+
 .imgfinal1 {
   display: flex;
 
@@ -300,10 +316,12 @@ html {
 .form-group {
   margin-bottom: 20px;
 }
+
 .form2 {
   margin-bottom: 10px;
   width: 420px;
 }
+
 .intform2 {
   width: 100%;
   padding: 12px;
@@ -313,6 +331,7 @@ html {
   box-sizing: border-box;
   border: none;
 }
+
 .btnform2 {
   background-color: #f7e869ea;
   color: white;
@@ -324,21 +343,26 @@ html {
   width: 60%;
   transition: background-color 0.3s;
 }
+
 .btnform2:hover {
   background-color: #ffc933bd;
 }
+
 .text_form2 {
   margin-bottom: 20px;
   margin-top: 20px;
 }
+
 .container_follow {
   display: flex;
   margin-top: 15px;
 }
+
 .follow {
   margin-top: 20px;
   font-size: 20px;
 }
+
 .follow_img {
   margin: 22px 0 0 40px;
 }
@@ -348,6 +372,7 @@ html {
 .modal::backdrop {
   background-color: #eaeaea7a;
 }
+
 .modal {
   width: 45%;
   height: 51%;
@@ -357,6 +382,7 @@ html {
   left: 25%;
   box-shadow: 0 2px 2px rgba(254, 251, 251, 0.896);
 }
+
 .stilomodal {
   background-color: white;
   padding: 30px;
@@ -421,18 +447,18 @@ textarea {
 }
 
 @media (max-width: 768px) {
-   .texini {
+  .texini {
     height: auto;
     flex-direction: column;
   }
+
   .category {
     width: 0px;
     height: 0px;
   }
+
   .final {
-     width: 0px;
+    width: 0px;
     height: 0px;
   }
-  }
-
-
+}
