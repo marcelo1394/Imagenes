@@ -12,8 +12,6 @@ html {
 
 /* HEADER */
 
-
-
 .header {
   width: 100%;
   height: auto;
@@ -151,16 +149,20 @@ html {
 }
 
 @keyframes movimiento_slider {
-  0%, 20% {
+  0%,
+  20% {
     transform: translateX(0%);
   }
-  25%, 45% {
+  25%,
+  45% {
     transform: translateX(-100%);
   }
-  50%, 70% {
+  50%,
+  70% {
     transform: translateX(-200%);
   }
-  75%, 100% {
+  75%,
+  100% {
     transform: translateX(-300%);
   }
 }
@@ -190,95 +192,151 @@ html {
   border-bottom: 3px solid #7c727297;
 }
 
-.muestra {
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: minmax(120px, auto);
+  gap: 15px;
+  width: 75%;
+
+  margin: 0 auto;
+}
+
+.bag-item {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   display: flex;
-  width: 85%;
-  height: 900px;
-  margin: 0 auto 30px;
-  border-bottom: 3px solid #7c727297;
-  flex-wrap: wrap;
-}
-
-.recuadro1,
-.recuadro2,
-.recuadro3,
-.recuadro4,
-.recuadro5 {
-  border: 3px solid #f4be0b97;
-  border-radius: 30px;
-  margin-right: 35px;
-  margin-bottom: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.recuadro1 {
-  width: 30%;
-  height: 45%;
-}
-
-.recuadro2 {
-  width: 30%;
-  height: 45%;
-}
-
-.recuadro3 {
-  width: 50%;
-  height: 55%;
-}
-
-.recuadro4 {
-  width: 45%;
-  height: 45%;
-  position: absolute;
-  top: 2050px;
-}
-
-.recuadro5 {
-  width: 36%;
-  height: 37%;
-  position: absolute;
-  top: 2120px;
-  right: 145px;
-}
-
-.imgrecu1,
-.imgrecu2,
-.imgrecu3,
-.imgrecu4,
-.imgrecu5 {
-  width: 100%;
-  height: 90%;
-  justify-content: center;
   align-items: center;
-  display: flex;
-}
-.recuadro4 {
-  display: flex;
-  left: 1150px;
-  width: 550px;
-  top: 1640px;
-  height: 410px;
-}
-.recuadro3 {
-  display: flex;
-  left: 1150px;
-  width: 550px;
-  top: 1640px;
-  height: 410px;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  border: 2px solid rgba(255, 226, 98, 0.3);
 }
 
-.price {
-  font-size: 24px;
+.bag-item:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  border-color: rgba(255, 226, 98, 0.8);
+}
+
+.bag-item::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  height: 10%;
-  background-color: #2d2d2d7b;
-  justify-content: center;
-  align-items: center;
+  height: 100%;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 226, 98, 0.1),
+    rgba(255, 226, 98, 0)
+  );
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.bag-item:hover::after {
+  opacity: 1;
+}
+
+.bag-text {
+  font-size: 1.4em;
+  font-weight: bold;
+  color: #5a4a00;
+  text-align: center;
+  padding: 20px;
+  z-index: 1;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Nueva disposición y colores basados en #ffe262 */
+.item-1 {
+  grid-column: span 2;
+  grid-row: span 1;
+  background-color: #ffe262;
+}
+
+.item-2 {
+  grid-column: span 2;
+  grid-row: span 2;
+  background-color: #fff0a3;
+}
+
+.item-3 {
+  grid-column: span 1;
+  grid-row: span 2;
+  background-color: #ffea80;
+}
+
+.item-4 {
+  grid-column: span 1;
+  grid-row: span 2;
+  background-color: #fff5bf;
+}
+
+.item-5 {
+  grid-column: span 2;
+  grid-row: span 1;
+  background-color: #ffed99;
+}
+
+/* Efectos hover con tonos más oscuros */
+.item-1:hover {
+  background-color: #ffdd40;
+}
+.item-2:hover {
+  background-color: #ffe880;
+}
+.item-3:hover {
+  background-color: #ffdf5a;
+}
+.item-4:hover {
+  background-color: #ffeda6;
+}
+.item-5:hover {
+  background-color: #ffe270;
+}
+.section-divider {
   display: flex;
-  border-bottom-left-radius: 25px;
-  border-bottom-right-radius: 28px;
+  align-items: center;
+  justify-content: center;
+  gap: 20px; /* Espacio entre líneas y texto */
+  margin: 40px 0; /* Ajusta según necesites */
+}
+
+.divider-line {
+  flex: 1; /* Las líneas ocupan el espacio disponible */
+  height: 3px;
+  background-color: #333; /* Color de las líneas */
+  opacity: 0.3; /* Transparencia para un look sutil */
+}
+
+.divider-text {
+  font-size: 26px;
+  color: #817b7baf;
+  font-weight: 900;
+  text-transform: uppercase; /* Opcional: mayúsculas */
+  letter-spacing: 1px; /* Espaciado entre letras */
+  white-space: nowrap; /* Evita saltos de línea */
+  position: relative;
+  text-decoration: none;
+}
+
+.divider-text::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: #ffe262;
+  transition: width 0.3s ease;
+}
+.divider-text:hover::after {
+  width: 100%;
 }
 
 .final {

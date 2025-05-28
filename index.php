@@ -33,7 +33,7 @@
           $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
           $mail->Port = 465;
           $mail->setFrom('prueba@imagraphicusa.com', 'CONTACTO IMAGRAPHICUSA');
-          $mail->addAddress('sistemas@imagenesgraficas.com', 'CONTACTO IMAGRAPHICUSA');          
+          $mail->addAddress('prueba@imagraphicusa.com', 'CONTACTO IMAGRAPHICUSA');          
           $mail->isHTML(true);
           $mail->Subject = 'CONTACTO IMAGRAPHICUSA';
           $mail->Body    =utf8_decode($msj);
@@ -182,43 +182,28 @@
     <div class="texini">
       <img width="100%" src="img/10.png" alt="" />
     </div>
-    <div class="muestra">
-      <div class="recuadro1">
-        <div class="imgrecu1">
-          <a href=""><img width="180px" justify src="img/cotton-bag-t25.png" alt="" />
-          </a>
-        </div>
-        <div class="price">View $7.66</div>
+    
+     <div class="gallery-container">
+      <div class="bag-item item-1">
+        <div class="bag-text">deninbag</div>
       </div>
-      <div class="recuadro2">
-        <div class="imgrecu2">
-          <a href=""><img width="150px" src="img/tote-bag-t01.png" alt="" />
-          </a>
-        </div>
-        <div class="price">View $7.66</div>
+      <div class="bag-item item-3">
+        <div class="bag-text">tote bag</div>
       </div>
-      <div class="recuadro3">
-        <div class="imgrecu3">
-          <a href="">
-            <img width="340px" src="img/12.png" alt="" />
-          </a>
-        </div>
-        <div class="price">View $7.66</div>
+      <div class="bag-item item-4">
+        <div class="bag-text">deninbag</div>
       </div>
-      <div class="recuadro4">
-        <div class="imgrecu4">
-          <a href="">
-            <img width="300px" src="img/11.png" alt="" />
-          </a>
-        </div>
-        <div class="price">View $7.66</div>
+      <div class="bag-item item-2">
+        <div class="bag-text">lunch bag</div>
       </div>
-      <div class="recuadro5">
-        <div class="imgrecu5">
-          <a href=""><img width="380px" src="img/13.png" alt="" /></a>
-        </div>
-        <div class="price">View $7.66</div>
+      <div class="bag-item item-5">
+        <div class="bag-text">lunch bag</div>
       </div>
+    </div>
+    <div class="section-divider">
+      <div class="divider-line"></div>
+      <span class="divider-text">See all products</span>
+      <div class="divider-line"></div>
     </div>
     <div class="final">
       <div class="imgfinal1">
