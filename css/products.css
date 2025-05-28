@@ -152,7 +152,7 @@ html {
 
 /* RESPONSIVE RULES */
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .menu2 {
     flex-direction: column;
     align-items: center;
@@ -202,7 +202,7 @@ html {
     max-height: 220px;
     width: auto;
   }
-}
+} */
 
 /* CATEGORY */
 
@@ -446,19 +446,152 @@ textarea {
   color: #333;
 }
 
+
+/* === RESPONSIVE DESIGN === */
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .menu {
+    flex-direction: column;
+    height: auto;
+    padding-bottom: 60px;
+  }
+
+  .derecho {
+    width: 100%;
+  }
+
+  .derecho_menu {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+
+  .menu2 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu2 li:not(:last-child)::after {
+    content: none;
+  }
+
+  .imagenes3 {
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+  }
+
+  .imagen1,
+  .imagen2,
+  .imagen3 {
+    width: 90%;
+    height: auto;
+  }
+
+  .muestra {
+    flex-wrap: wrap;
+    height: auto;
+    justify-content: center;
+  }
+
+  .recuadro1,
+  .recuadro2,
+  .recuadro3,
+  .recuadro4,
+  .recuadro5 {
+    width: 80%;
+    margin: 20px auto;
+    position: static;
+  }
+
+  .imgfinal1 {
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .form2 {
+    width: 90%;
+  }
+}
+
+/* Celulares */
+
 @media (max-width: 768px) {
+  .header {
+    padding: 0 20px;
+    justify-content: center;
+    height: 65px; /* Asegura que tenga altura fija */
+  }
+
+  .menu {
+    flex-direction: column;
+    height: auto;
+    padding-bottom: 60px;
+    margin-top: 65px; /* Previene que se superponga con el header */
+  }
+
+  .slider_cont {
+    height: 0px;
+  }
+
   .texini {
     height: auto;
     flex-direction: column;
   }
 
-  .category {
-    width: 0px;
-    height: 0px;
+  .final {
+    height: auto;
+    padding: 20px 0;
   }
 
-  .final {
-    width: 0px;
-    height: 0px;
+  .texfinal {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .modal {
+    width: 90%;
+    left: 5%;
+    top: 40%;
+    height: auto;
+  }
+
+  .stilomodal {
+    padding: 20px;
+  }
+
+  .btnform2 {
+    width: 90%;
+  }
+
+  .container_follow {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .follow_img {
+    margin: 10px 0 0 0;
+    display: flex;
+    gap: 15px;
+  }
+
+  .recuadro3 img,
+  .recuadro4 img,
+  .recuadro5 img {
+    width: 100% !important;
+    height: 150px;
   }
 }
+@media (max-width: 480px) {
+  
+
+  .izquierdo_imagen {
+    max-height: 220px;
+    width: auto;
+  }
+}
+

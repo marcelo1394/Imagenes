@@ -57,7 +57,7 @@ html {
 }
 
 .izquierdo_imagen {
-  max-height: 200px;
+  max-height: 300px;
   width: auto;
 }
 
@@ -594,5 +594,13 @@ textarea {
   .recuadro5 img {
     width: 100% !important;
     height: 150px;
+  }
+}
+@media (max-width: 480px) {
+  
+
+  .izquierdo_imagen {
+    max-height: 220px;
+    width: auto;
   }
 }
