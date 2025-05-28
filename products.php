@@ -28,13 +28,6 @@ $resultado = $conn->query($sql);
 <head>
 
   <style>
-    /* .grid-container {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 70px;
-      max-width: 1200px;
-      margin: auto;
-    } */
     .grid-container {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
@@ -44,28 +37,6 @@ $resultado = $conn->query($sql);
       margin: auto;
     }
 
-    /* .card {
-      background: white;
-      padding: 15px;
-      margin-top: 30px;
-      margin-left: 50px;
-      border: 2px solid #ffe262;
-      text-align: center;
-      height: 500px;
-      width: 350px;
-
-    }
-
-    .card img {
-      max-width: 100%;
-      height: 350px;
-      object-fit: cover;
-      border-radius: 6px;
-    }
-
-    .card h3 {
-      margin: 80px 0 5px;
-    } */
     .card {
       background: white;
       padding: 15px;
@@ -93,22 +64,6 @@ $resultado = $conn->query($sql);
       color: #666;
     }
 
-    /* 
-    @media (max-width: 768px) {
-      body {
-        padding: 15px;
-      }
-
-      .card img {
-        height: 120px;
-      }
-    }
-
-    @media (max-width: 480px) {
-      .card img {
-        height: 100px;
-      }
-    } */
     @media (max-width: 1024px) {
       .grid-container {
         grid-template-columns: repeat(2, 1fr);
@@ -295,55 +250,55 @@ $resultado = $conn->query($sql);
         <?php endfor; ?>
       </div>
 
-     
+
     </div> <!-- cierre de .category_derecha -->
-    
+
   </div> <!-- cierre de .category -->
-   <div class="texini">
-        <img width="100%" src="img/10.png" alt="" />
-      </div>
+  <div class="texini">
+    <img width="100%" src="img/10.png" alt="" />
+  </div>
 
-      <div class="final">
-        <div class="imgfinal1">
-          <img width="180px" src="img/bombillo.png" alt="" />
+  <div class="final">
+    <div class="imgfinal1">
+      <img width="180px" src="img/bombillo.png" alt="" />
+      <div class="form2">
+        <h1 class="text_form2">Subscribe now!</h1>
+        <form>
           <div class="form2">
-            <h1 class="text_form2">Subscribe now!</h1>
-            <form>
-              <div class="form2">
-                <input class="intform2" id="name" placeholder="Your Name" />
-              </div>
-              <div class="form2">
-                <input class="intform2" id="email" placeholder="Your Email" />
-              </div>
-              <div class="form2">
-                <input class="intform2" id="email" placeholder="Your Company" />
-              </div>
-            </form>
-            <button id="btnenviar" class="btnform2">Enviar</button>
-            <div class="container_follow">
-              <h4 class="follow">Follow us on:</h4>
-              <div class="follow_img">
-                <a href="https://www.instagram.com/imagenes_graficas?igshid=di1ufcnwhc4f">
-                  <img width="40px" src="img/instagram.svg" alt="" />
-                </a>
-                <a href="https://www.facebook.com/imagenesgraficasbicsas/">
-                  <img width="40px" src="img/facebook.svg" alt="" />
-                </a>
-                <a href="https://co.pinterest.com/igraficas/?invite_code=624950ea13b548a7b1c680f4787bd4c9&sender=506162583028394334">
-                  <img width="40px" src="img/pinterest.svg" alt="" />
-                </a>
-              </div>
-            </div>
+            <input class="intform2" id="name" placeholder="Your Name" />
           </div>
-          <div class="footer_img">
-            <img width="400px" src="img/9.png" alt="" />
+          <div class="form2">
+            <input class="intform2" id="email" placeholder="Your Email" />
           </div>
-        </div>
-
-        <div class="texfinal">
-          Copyright 2025 Imagraphic - All Rights Reserved
+          <div class="form2">
+            <input class="intform2" id="email" placeholder="Your Company" />
+          </div>
+        </form>
+        <button id="btnenviar" class="btnform2">Enviar</button>
+        <div class="container_follow">
+          <h4 class="follow">Follow us on:</h4>
+          <div class="follow_img">
+            <a href="https://www.instagram.com/imagenes_graficas?igshid=di1ufcnwhc4f">
+              <img width="40px" src="img/instagram.svg" alt="" />
+            </a>
+            <a href="https://www.facebook.com/imagenesgraficasbicsas/">
+              <img width="40px" src="img/facebook.svg" alt="" />
+            </a>
+            <a href="https://co.pinterest.com/igraficas/?invite_code=624950ea13b548a7b1c680f4787bd4c9&sender=506162583028394334">
+              <img width="40px" src="img/pinterest.svg" alt="" />
+            </a>
+          </div>
         </div>
       </div>
+      <div class="footer_img">
+        <img width="400px" src="img/9.png" alt="" />
+      </div>
+    </div>
+
+    <div class="texfinal">
+      Copyright 2025 Imagraphic - All Rights Reserved
+    </div>
+  </div>
 
   <script src="funciones.js"></script>
 
