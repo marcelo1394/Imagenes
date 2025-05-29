@@ -50,7 +50,7 @@
 }
 
 .izquierdo_imagen {
-  max-height: 200px;
+  max-height: 300px;
   width: auto;
 }
 
@@ -179,7 +179,6 @@
 
     body {
       font-family: Arial, sans-serif;
-      padding: 20px;
       color: #333;
     }
 
@@ -273,4 +272,9 @@
       .product-container {
         flex-direction: column;
       }
+    }
+    @media (max-width: 480px) {
+      .accordion-content img {
+        width: 300px;
+    }
     }

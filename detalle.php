@@ -73,7 +73,6 @@ $producto = $result->fetch_assoc();
           <ul class="menu2">
             <li><a href="index.php">HOME</a></li>
             <li><a href="products.php">PRODUCTS</a></li>
-            <li><a href="#Proyectos">RESOURCES</a></li>
             <li><a href="aboutus.php">ABOUT US</a></li>
             <li><a href="howwemade.php">HOW WE MADE</a></li>
           </ul>
@@ -112,7 +111,7 @@ $producto = $result->fetch_assoc();
 
       <div class="accordion">
         <div class="accordion-header">Prices</div>
-        <div class="accordion-content"><img src="productsimg/<?= htmlspecialchars($producto['imagen']) ?>.png" alt=""></div>
+        <div class="accordion-content"><img src="imgprices/<?= htmlspecialchars($producto['Prices']) ?>.png" alt=""></div>
       </div>
 
       <div class="accordion">
@@ -130,10 +129,10 @@ $producto = $result->fetch_assoc();
         <div class="accordion-content"><?=htmlspecialchars($producto['Shipping details']) ?></div>
       </div>
 
-      <div class="accordion">
+      <!-- <div class="accordion">
         <div class="accordion-header">Legal details</div>
         <div class="accordion-content"><?=htmlspecialchars($producto['Legal details']) ?></div>
-      </div>
+      </div> -->
     </div>
   </div>
 

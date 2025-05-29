@@ -20,7 +20,7 @@
       if (count($errors)== 0){
         $msj="De: $nombre<br> Correo:<a href='mailto:$email'>$email</a><br>";
         $msj.="Asunto: Solicitud de cotización<br>";
-        $msj.="Mensaje: $request<br>";
+        $msj.="empresa: $request<br>";
         $msj.="<br>";
         $mail = new PHPMailer(true);}
         try {
@@ -38,7 +38,7 @@
           $mail->Subject = 'CONTACTO IMAGRAPHICUSA';
           $mail->Body    =utf8_decode($msj);
           $mail->send();
-          $respuesta = "mensaje enviado";
+          $respuesta = "MESSAGE SENT";
       }
       catch (Exception $e) {
         $respuesta = 'Mensaje '.$mail->ErrorInfo;
@@ -52,6 +52,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    />
     <title>Imagrafic</title>
   </head>
 
@@ -95,75 +103,19 @@
             <ul class="menu2">
               <li><a href="#Home">HOME</a></li>
               <li><a href="products.php">PRODUCTS</a></li>
-              <li><a href="#Proyectos">RESOURCES</a></li>
               <li><a href="aboutus.php">ABOUT US</a></li>
               <li><a href="howwemade.php">HOW WE MADE</a></li>
-              <li>
-                <button id="btnabrir" class="boton primary">
+                <li>
+                <a href="#formulario"><button id="btnabrir" class="boton primary" >
                   Request a Quote
-                </button>
+                </button></a>
               </li>
+              
             </ul>
           </div>
         </div>
       </div>
-      <dialog id="modal" class="modal">      
-        <div class="stilomodal">
-          <?php
-            if(isset($errors)){
-              if(count($errors) > 0){
-          ?>
-            <div class="row">
-              <div class="col-lag-6 col-md-12">
-                <div class="alert alert-danger alert-dismissible" role="alert">
-                  <?php
-                    foreach($errors as $error){
-                      echo $error.'<br>';
-                    }
-                  ?>
-                </div>
-              </div>
-            </div>
-          <?php
-            }}        
-          ?>
-          <h2>Request a Quote</h2>
-          <form method="POST" action="<?php echo htmlentities($_SERVER['PHP_SELF'])?>"autocomplete="off">
-            <div class="form-group">
-              <label for="name">Name:</label>
-              <input
-                type="text"
-                name="name"
-                id="name"
-                required
-                placeholder="Enter your full name" />
-            </div>
-            <div class="form-group">
-              <label for="email">Email:</label>
-              <input
-                type="text"
-                name="correo"
-                id="email"
-                required
-                placeholder="Enter your email" />
-            </div>
-            <div class="form-group">
-              <label for="request" class="request-label">application:</label>
-              <textarea
-                id="request" name="request" required
-                placeholder="Describe your request here"></textarea>
-            </div>
-            <button name="submit" type="submit"  class="btn-submit">Send</button>
-          </form>
-          <?php if(isset($respuesta)){?>
-              <div class="row">
-                <div class="col-lag-6 col-md-12">
-                <?php echo $respuesta; ?>
-                </div>
-              </div>
-          <?php }?>        
-        </div>
-      </dialog>
+     
     </div>
 
     <div class="slider_cont">
@@ -202,26 +154,94 @@
     </div>
     <div class="section-divider">
       <div class="divider-line"></div>
-      <span class="divider-text">See all products</span>
+     <span class="divider-text">See all products</span>
       <div class="divider-line"></div>
+    </div>
+    <div class="featured-container">
+      <div class="section-header">
+        <h2 class="section-title">Featured Products</h2>
+      </div>
+
+      <div class="product-slider">
+        <div class="product-item">
+          <div class="product-image">Small Dunsming Bag</div>
+          <h3 class="product-name">Small Dunsming Bag</h3>
+          <p class="product-status">Real New</p>
+        </div>
+
+        <div class="product-item">
+          <div class="product-image">Trade show Bag</div>
+          <h3 class="product-name">Trade show Bag</h3>
+          <p class="product-status">Real New</p>
+        </div>
+
+        <div class="product-item">
+          <div class="product-image">Trade show Bag</div>
+          <h3 class="product-name">Trade show Bag</h3>
+          <p class="product-status">Real New</p>
+        </div>
+
+        <div class="product-item">
+          <div class="product-image">Trade show Bag</div>
+          <h3 class="product-name">Trade show Bag</h3>
+          <p class="product-status">Real New</p>
+        </div>
+
+        <!-- Puedes añadir más productos si necesitas -->
+        <div class="product-item">
+          <div class="product-image">Trade show Bag</div>
+          <h3 class="product-name">Trade show Bag</h3>
+          <p class="product-status">Real New</p>
+        </div>
+      </div>
     </div>
     <div class="final">
       <div class="imgfinal1">
         <img width="180px" src="img/bombillo.png" alt="" />
         <div class="form2">
+          <?php
+                if(isset($errors)){
+                if(count($errors) > 0){
+            ?>
+            <div class="row">
+              <div class="col-lag-6 col-md-12">
+                <div class="alert alert-danger alert-dismissible" role="alert">
+                  <?php
+                    foreach($errors as $error){
+                      echo $error.'<br>';
+                    }
+                  ?>
+                </div>
+              </div>
+            </div>
+          <?php
+            }}        
+          ?>
           <h1 class="text_form2">Subscribe now!</h1>
-          <form>
+            
+          <form id="formulario" method="POST" action="<?php echo htmlentities($_SERVER['PHP_SELF'])?>"autocomplete="off">
             <div class="form2">
-              <input class="intform2" id="name" placeholder="Your Name" />
+              <input class="intform2"   name="name"  placeholder="Your Name" required/>
             </div>
             <div class="form2">
-              <input class="intform2" id="email" placeholder="Your Email" />
+              <input class="intform2" name="correo"  required
+              placeholder="Your Email" />
             </div>
             <div class="form2">
-              <input class="intform2" id="email" placeholder="Your Company" />
+              <input class="intform2"  name="request"placeholder="Your Company" required />
             </div>
+            <?php if(isset($respuesta)){?>
+              <div class="formmjs">
+                
+                <?php echo $respuesta;
+                 ?>
+                
+                
+              </div>
+          <?php }?> 
+           <button name="submit" type="submit"  class="btnform2">Send</button>
           </form>
-          <button id="btnenviar" class="btnform2">Send</button>
+          
           <div class="container_follow">
             <h4 class="follow">Follow us on:</h4>
             <div class="follow_img">
@@ -243,5 +263,40 @@
       </div>
     </div>
     <script src="funciones.js"></script>
+     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".product-slider").slick({
+          dots: true,
+          arrows: true,
+          infinite: true,
+          speed: 300,
+          slidesToShow: 4,
+          slidesToScroll: 1,
+          responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 3,
+              },
+            },
+            {
+              breakpoint: 768,
+              settings: {
+                slidesToShow: 2,
+              },
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 1,
+                arrows: false,
+              },
+            },
+          ],
+        });
+      });
+    </script>
     </body>
 </html>

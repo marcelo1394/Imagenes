@@ -1,3 +1,50 @@
+<?php
+  use PHPMailer\PHPMailer\{PHPMailer, SMTP,Exception};
+  require 'PHPMailer/src/Exception.php';
+  require 'PHPMailer/src/PHPMailer.php';
+  require 'PHPMailer/src/SMTP.php';
+  if(isset($_POST['submit'])){
+      $nombre = $_POST['name'];
+      $email = $_POST['correo'];
+      $request = $_POST['request'];
+      $errors = array();
+      if(empty($nombre)){
+        $errors[] = 'Name is required';
+      }
+      if(!filter_var($email, FILTER_VALIDATE_EMAIL)){
+        $errors[] = 'The email address is invalid';
+      }
+      if(empty($request)){
+        $errors[] = 'Request is required';
+      }
+      if (count($errors)== 0){
+        $msj="De: $nombre<br> Correo:<a href='mailto:$email'>$email</a><br>";
+        $msj.="Asunto: Solicitud de cotización<br>";
+        $msj.="empresa: $request<br>";
+        $msj.="<br>";
+        $mail = new PHPMailer(true);}
+        try {
+          $mail ->SMTPDebug  = SMTP::DEBUG_OFF;
+          $mail->isSMTP();
+          $mail->Host='smtp.mi.com.co';
+          $mail->SMTPAuth = true;
+          $mail->Username='prueba@imagraphicusa.com';
+          $mail->Password='Jdrg0908*/';
+          $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
+          $mail->Port = 465;
+          $mail->setFrom('prueba@imagraphicusa.com', 'CONTACTO IMAGRAPHICUSA');
+          $mail->addAddress('prueba@imagraphicusa.com', 'CONTACTO IMAGRAPHICUSA');          
+          $mail->isHTML(true);
+          $mail->Subject = 'CONTACTO IMAGRAPHICUSA';
+          $mail->Body    =utf8_decode($msj);
+          $mail->send();
+          $respuesta = "MESSAGE SENT";
+      }
+      catch (Exception $e) {
+        $respuesta = 'Mensaje '.$mail->ErrorInfo;
+      }
+  }
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -50,7 +97,6 @@
           <ul class="menu2">
             <li><a href="index.php">HOME</a></li>
             <li><a href="products.php">PRODUCTS</a></li>
-            <li><a href="#Proyectos">RESOURCES</a></li>
             <li><a href="aboutus.php">ABOUT US</a></li>
             <li><a href="howwemade.php">HOW WE MADE</a></li>
           </ul>
@@ -208,7 +254,7 @@
         <p class="cta-subtitle">
           Our team is ready to help you 
         </p>
-        <a href="tel:+1234567890" class="cta-button">
+        <a href="#formulario" class="cta-button">
           <i class="fas fa-phone-alt"></i> Contact Us Today
         </a>
       </div>
@@ -217,19 +263,48 @@
     <div class="imgfinal1">
       <img width="180px" src="img/bombillo.png" alt="" />
       <div class="form2">
-        <h1 class="text_form2">Subscribe now!</h1>
-        <form>
-          <div class="form2">
-            <input class="intform2" id="name" placeholder="Your Name" />
-          </div>
-          <div class="form2">
-            <input class="intform2" id="email" placeholder="Your Email" />
-          </div>
-          <div class="form2">
-            <input class="intform2" id="email" placeholder="Your Company" />
-          </div>
-        </form>
-        <button id="btnenviar" class="btnform2">Enviar</button>
+        <?php
+                if(isset($errors)){
+                if(count($errors) > 0){
+            ?>
+            <div class="row">
+              <div class="col-lag-6 col-md-12">
+                <div class="alert alert-danger alert-dismissible" role="alert">
+                  <?php
+                    foreach($errors as $error){
+                      echo $error.'<br>';
+                    }
+                  ?>
+                </div>
+              </div>
+            </div>
+          <?php
+            }}        
+          ?>
+          <h1 class="text_form2">Subscribe now!</h1>
+            
+          <form id="formulario" method="POST" action="<?php echo htmlentities($_SERVER['PHP_SELF'])?>"autocomplete="off">
+            <div class="form2">
+              <input class="intform2"   name="name"  placeholder="Your Name" required/>
+            </div>
+            <div class="form2">
+              <input class="intform2" name="correo"  required
+              placeholder="Your Email" />
+            </div>
+            <div class="form2">
+              <input class="intform2"  name="request"placeholder="Your Company" required />
+            </div>
+            <?php if(isset($respuesta)){?>
+              <div class="formmjs">
+                
+                <?php echo $respuesta;
+                 ?>
+                
+                
+              </div>
+            <?php }?> 
+           <button name="submit" type="submit"  class="btnform2">Send</button>
+          </form>
         <div class="container_follow">
           <h4 class="follow">Follow us on:</h4>
           <div class="follow_img">

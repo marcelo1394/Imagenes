@@ -2,7 +2,7 @@
 include_once 'conexion.php';
 
 // Número de productos por página
-$por_pagina = 6;
+$por_pagina = 32;
 $pagina_actual = isset($_GET['pagina']) ? (int)$_GET['pagina'] : 1;
 $inicio = ($pagina_actual - 1) * $por_pagina;
 
@@ -21,41 +21,42 @@ $sql = "SELECT * FROM productos $filtro_categoria LIMIT $inicio, $por_pagina";
 $resultado = $conn->query($sql);
 ?>
 
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-
+  
   <style>
     .grid-container {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 70px;
-      max-width: 1200px;
+      grid-template-columns: repeat(4, 1fr);
+      /* 4 columnas fijas */
+      gap: 40px;
+      max-width: 1400px;
       margin: auto;
     }
 
     .card {
       background: white;
       padding: 15px;
-      margin-top: 30px;
-      margin-left: 50px;
       border: 2px solid #ffe262;
       text-align: center;
-      height: 500px;
-      width: 350px;
-
+      height: 420px;
+      width: 100%;
+      /* se ajusta automáticamente a su columna */
+      box-sizing: border-box;
     }
 
     .card img {
       max-width: 100%;
-      height: 350px;
+      height: 250px;
       object-fit: cover;
       border-radius: 6px;
     }
 
     .card h3 {
-      margin: 80px 0 5px;
+      margin: 20px 0 5px;
     }
 
     .card p {
@@ -63,21 +64,34 @@ $resultado = $conn->query($sql);
       color: #666;
     }
 
-    @media (max-width: 768px) {
-      body {
-        padding: 15px;
+    @media (max-width: 1024px) {
+      .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .card {
+        height: 400px;
       }
 
       .card img {
-        height: 120px;
+        height: 200px;
       }
     }
 
-    @media (max-width: 480px) {
+    @media (max-width: 600px) {
+      .grid-container {
+        grid-template-columns: 1fr;
+      }
+
+      .card {
+        height: 380px;
+      }
+
       .card img {
-        height: 100px;
+        height: 180px;
       }
     }
+
     .paginacion {
       text-align: center;
       margin-top: 30px;
@@ -107,6 +121,96 @@ $resultado = $conn->query($sql);
 
     .category_izquierda_ul2 a:hover {
       color: grey;
+    }
+
+    /* ----------------- */
+
+    .category {
+      display: flex;
+      gap: 40px;
+      padding: 20px;
+    }
+
+    .category_izquierda {
+      flex: 1;
+      max-width: 250px;
+    }
+
+    .category_derecha {
+      flex: 3;
+      width: 100%;
+    }
+
+    .category_izquierda_ul1,
+    .category_izquierda_ul2 {
+      list-style: none;
+      padding: 0;
+    }
+
+    .category_izquierda_ul1 li,
+    .category_izquierda_ul2 li {
+      margin-bottom: 10px;
+    }
+
+    .category_izquierda_p {
+      font-weight: bold;
+      margin: 20px 0 10px;
+    }
+
+    @media (max-width: 1024px) {
+      .category {
+        flex-direction: column;
+      }
+
+      .category_izquierda {
+        max-width: 100%;
+        width: 100%;
+        margin-bottom: 20px;
+      }
+
+      .category_derecha {
+        width: 100%;
+      }
+
+      .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 600px) {
+      .category {
+        flex-direction: column;
+        padding: 10px;
+      }
+
+      .category_izquierda {
+        max-width: 100%;
+        width: 100%;
+        margin-bottom: 300px;
+      }
+
+      .category_derecha {
+        width: 100%;
+      }
+
+      .grid-container {
+        grid-template-columns: 4fr;
+      }
+
+      .category_izquierda_ul1 {
+        display: flex;
+        margin-left: 110px;
+      }
+
+      .category_izquierda_p {
+        display: flex;
+        margin-left: 60px;
+      }
+
+      .category_izquierda_ul2 {
+        margin-left:110px;
+      }
+
     }
   </style>
 
@@ -155,14 +259,13 @@ $resultado = $conn->query($sql);
           <ul class="menu2">
             <li><a href="index.php">HOME</a></li>
             <li><a href="products.php">PRODUCTS</a></li>
-            <li><a href="#Proyectos">RESOURCES</a></li>
             <li><a href="aboutus.php">ABOUT US</a></li>
             <li><a href="howwemade.php">HOW WE MADE</a></li>
           </ul>
         </div>
       </div>
     </div>
-     <dialog id="modal" class="modal">
+    <dialog id="modal" class="modal">
       <div class="stilomodal">
         <h2>Request a Quote</h2>
 
@@ -197,7 +300,7 @@ $resultado = $conn->query($sql);
     <div class="category_izquierda">
       <ul class="category_izquierda_ul1">
         <li><a href="index.php">HOME</a></li>
-        <li><a href="products.php">PRODUCTS</a></li>
+        <!-- <li><a href="products.php">PRODUCTS</a></li> -->
       </ul>
       <p class="category_izquierda_p">CATEGORIES</p>
       <ul class="category_izquierda_ul2">
@@ -208,7 +311,7 @@ $resultado = $conn->query($sql);
         <li><a href="products.php?categoria=Drawstring bags">Drawstring bags</a></li>
         <li><a href="products.php?categoria=Baskets">Baskets</a></li>
         <li><a href="products.php?categoria=Cloths">Cloths</a></li>
-        <li><a href="products.php?categoria=Clothing">Clothing</a></li>
+        <!-- <li><a href="products.php?categoria=Clothing">Clothing</a></li> -->
       </ul>
     </div>
     <div class="category_derecha">
@@ -236,11 +339,15 @@ $resultado = $conn->query($sql);
           </a>
         <?php endfor; ?>
       </div>
-    </div>
-  </div>
-  <div class="texini">
+
+
+    </div> <!-- cierre de .category_derecha -->
+
+  </div> <!-- cierre de .category -->
+  <!-- <div class="texini">
     <img width="100%" src="img/10.png" alt="" />
   </div>
+
   <div class="final">
     <div class="imgfinal1">
       <img width="180px" src="img/bombillo.png" alt="" />
@@ -261,11 +368,15 @@ $resultado = $conn->query($sql);
         <div class="container_follow">
           <h4 class="follow">Follow us on:</h4>
           <div class="follow_img">
-            <a
-              href="https://www.instagram.com/imagenes_graficas?igshid=di1ufcnwhc4f"><img width="40px" src="img/instagram.svg" alt="" /></a>
-            <a href="https://www.facebook.com/imagenesgraficasbicsas/"><img width="40px" src="img/facebook.svg" alt="" /></a>
-            <a
-              href="https://co.pinterest.com/igraficas/?invite_code=624950ea13b548a7b1c680f4787bd4c9&sender=506162583028394334"><img width="40px" src="img/pinterest.svg" alt="" /></a>
+            <a href="https://www.instagram.com/imagenes_graficas?igshid=di1ufcnwhc4f">
+              <img width="40px" src="img/instagram.svg" alt="" />
+            </a>
+            <a href="https://www.facebook.com/imagenesgraficasbicsas/">
+              <img width="40px" src="img/facebook.svg" alt="" />
+            </a>
+            <a href="https://co.pinterest.com/igraficas/?invite_code=624950ea13b548a7b1c680f4787bd4c9&sender=506162583028394334">
+              <img width="40px" src="img/pinterest.svg" alt="" />
+            </a>
           </div>
         </div>
       </div>
@@ -277,10 +388,10 @@ $resultado = $conn->query($sql);
     <div class="texfinal">
       Copyright 2025 Imagraphic - All Rights Reserved
     </div>
-  
-  </div>
-    <script src="funciones.js"></script>
-  
+  </div> -->
+
+  <script src="funciones.js"></script>
+
 </body>
 
 </html>
