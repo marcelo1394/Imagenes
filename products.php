@@ -26,7 +26,7 @@ $resultado = $conn->query($sql);
 <html lang="en">
 
 <head>
-
+  
   <style>
     .grid-container {
       display: grid;
@@ -122,6 +122,96 @@ $resultado = $conn->query($sql);
     .category_izquierda_ul2 a:hover {
       color: grey;
     }
+
+    /* ----------------- */
+
+    .category {
+      display: flex;
+      gap: 40px;
+      padding: 20px;
+    }
+
+    .category_izquierda {
+      flex: 1;
+      max-width: 250px;
+    }
+
+    .category_derecha {
+      flex: 3;
+      width: 100%;
+    }
+
+    .category_izquierda_ul1,
+    .category_izquierda_ul2 {
+      list-style: none;
+      padding: 0;
+    }
+
+    .category_izquierda_ul1 li,
+    .category_izquierda_ul2 li {
+      margin-bottom: 10px;
+    }
+
+    .category_izquierda_p {
+      font-weight: bold;
+      margin: 20px 0 10px;
+    }
+
+    @media (max-width: 1024px) {
+      .category {
+        flex-direction: column;
+      }
+
+      .category_izquierda {
+        max-width: 100%;
+        width: 100%;
+        margin-bottom: 20px;
+      }
+
+      .category_derecha {
+        width: 100%;
+      }
+
+      .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 600px) {
+      .category {
+        flex-direction: column;
+        padding: 10px;
+      }
+
+      .category_izquierda {
+        max-width: 100%;
+        width: 100%;
+        margin-bottom: 300px;
+      }
+
+      .category_derecha {
+        width: 100%;
+      }
+
+      .grid-container {
+        grid-template-columns: 4fr;
+      }
+
+      .category_izquierda_ul1 {
+        display: flex;
+        margin-left: 110px;
+      }
+
+      .category_izquierda_p {
+        display: flex;
+        margin-left: 60px;
+      }
+
+      .category_izquierda_ul2 {
+        margin-left:110px;
+      }
+
+    }
   </style>
 
   <meta charset="UTF-8" />
@@ -210,7 +300,7 @@ $resultado = $conn->query($sql);
     <div class="category_izquierda">
       <ul class="category_izquierda_ul1">
         <li><a href="index.php">HOME</a></li>
-        <li><a href="products.php">PRODUCTS</a></li>
+        <!-- <li><a href="products.php">PRODUCTS</a></li> -->
       </ul>
       <p class="category_izquierda_p">CATEGORIES</p>
       <ul class="category_izquierda_ul2">
@@ -221,7 +311,7 @@ $resultado = $conn->query($sql);
         <li><a href="products.php?categoria=Drawstring bags">Drawstring bags</a></li>
         <li><a href="products.php?categoria=Baskets">Baskets</a></li>
         <li><a href="products.php?categoria=Cloths">Cloths</a></li>
-        <li><a href="products.php?categoria=Clothing">Clothing</a></li>
+        <!-- <li><a href="products.php?categoria=Clothing">Clothing</a></li> -->
       </ul>
     </div>
     <div class="category_derecha">
@@ -254,7 +344,7 @@ $resultado = $conn->query($sql);
     </div> <!-- cierre de .category_derecha -->
 
   </div> <!-- cierre de .category -->
-  <div class="texini">
+  <!-- <div class="texini">
     <img width="100%" src="img/10.png" alt="" />
   </div>
 
@@ -298,7 +388,7 @@ $resultado = $conn->query($sql);
     <div class="texfinal">
       Copyright 2025 Imagraphic - All Rights Reserved
     </div>
-  </div>
+  </div> -->
 
   <script src="funciones.js"></script>
 
