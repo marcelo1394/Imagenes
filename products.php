@@ -225,25 +225,12 @@ $resultado = $conn->query($sql);
     <ul class="redes">
       <li>
         <a
-          href="https://www.instagram.com/imagenes_graficas?igshid=di1ufcnwhc4f"
+          href="https://www.instagram.com/imagraphic_promo/"
           target="_blank">
           <img class="instagram" src="img/instagram.svg" alt="" />
         </a>
       </li>
-      <li>
-        <a
-          href="https://www.facebook.com/imagenesgraficasbicsas/"
-          target="_blank">
-          <img class="facebook" src="img/facebook.svg" alt="" />
-        </a>
-      </li>
-      <li>
-        <a
-          href="https://co.pinterest.com/igraficas/?invite_code=624950ea13b548a7b1c680f4787bd4c9&sender=506162583028394334"
-          target="_blank">
-          <img class="pinterest" src="img/pinterest.svg" alt="" />
-        </a>
-      </li>
+     
     </ul>
   </div>
   <div class="menu">

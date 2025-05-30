@@ -1,5 +1,6 @@
 html {
   box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
 }
 
 *,
@@ -114,7 +115,7 @@ html {
 .menu2 li {
   list-style: none;
   margin: 8px;
-  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
 }
 
 .menu2 li a {
@@ -272,7 +273,6 @@ html {
 
 /* THINK DIFFERENT */
 
-
 .texini {
   display: flex;
   width: 80%;
@@ -367,7 +367,6 @@ html {
   margin: 22px 0 0 40px;
 }
 
-
 /* VENTANA MODAL */
 .modal::backdrop {
   background-color: #eaeaea7a;
@@ -445,7 +444,6 @@ textarea {
   margin-top: 20px;
   color: #333;
 }
-
 
 /* === RESPONSIVE DESIGN === */
 
@@ -587,11 +585,8 @@ textarea {
   }
 }
 @media (max-width: 480px) {
-  
-
   .izquierdo_imagen {
     max-height: 220px;
     width: auto;
   }
 }
-

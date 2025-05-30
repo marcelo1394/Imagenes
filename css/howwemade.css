@@ -2,6 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: "Open Sans", sans-serif;
 }
 
 .header {
@@ -88,7 +89,7 @@
 .menu2 li {
   list-style: none;
   margin: 8px;
-  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
 }
 
 .menu2 li a {
@@ -276,7 +277,6 @@
   color: #444;
   position: relative;
   display: inline-block;
-  font-family: "Playfair Display", serif;
 }
 
 .logo::after {

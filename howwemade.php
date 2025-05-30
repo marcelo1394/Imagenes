@@ -12,20 +12,11 @@
   <div class="header">
     <ul class="redes">
       <li>
-        <a href="https://www.instagram.com/imagenes_graficas?igshid=di1ufcnwhc4f" target="_blank">
+        <a href="https://www.instagram.com/imagraphic_promo/" target="_blank">
           <img class="instagram" src="img/instagram.svg" alt="Instagram" />
         </a>
       </li>
-      <li>
-        <a href="https://www.facebook.com/imagenesgraficasbicsas/" target="_blank">
-          <img class="facebook" src="img/facebook.svg" alt="Facebook" />
-        </a>
-      </li>
-      <li>
-        <a href="https://co.pinterest.com/igraficas/" target="_blank">
-          <img class="pinterest" src="img/pinterest.svg" alt="Pinterest" />
-        </a>
-      </li>
+      
     </ul>
   </div>
 
@@ -51,7 +42,7 @@
   </div>
   <div class="central">
     <div class="container">
-        <div class="video-call">Watch the video</div>
+        
          <div class="video-placeholder">
             <div class="video-wrapper">
                     <video class="video" autoplay muted loop controls poster="[URL_THUMBNAIL]">
@@ -59,13 +50,12 @@
                     </video>            
             </div> 
         </div>     
-        <div class="logo">IMAGRAPHIC</div>
+        <div class="l"><img width="350px" src="img/LOGO.png" alt=""></div>
         <div class="social">Explore more on  <div class="follow_img">
             <a
-              href="https://www.instagram.com/imagenes_graficas?igshid=di1ufcnwhc4f"><img width="35px" src="img/instagram.svg" alt="" /></a>
-            <a href="https://www.facebook.com/imagenesgraficasbicsas/"><img width="35px" src="img/facebook.svg" alt="" /></a>
-            <a
-              href="https://co.pinterest.com/igraficas/?invite_code=624950ea13b548a7b1c680f4787bd4c9&sender=506162583028394334"><img width="35px" src="img/pinterest.svg" alt="" /></a>
+              href="https://www.instagram.com/imagraphic_promo/"><img width="35px" src="img/instagram.svg" alt="" /></a>
+            <a href="https://wa.me/573176428571"><img width="35px" src="img/whatsapp.png" alt="" /></a>
+            
           </div></div>
     </div>
   </div>

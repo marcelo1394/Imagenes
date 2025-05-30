@@ -74,20 +74,7 @@
             <img class="instagram" src="img/instagram.svg" alt="" />
           </a>
         </li>
-        <li>
-          <!-- <a
-            href="https://www.facebook.com/imagenesgraficasbicsas/"
-            target="_blank">
-            <img class="facebook" src="img/facebook.svg" alt="" />
-          </a>
-        </li> -->
-        <li>
-          <a
-            href="https://co.pinterest.com/imagraphicusa/
-            target="_blank">
-            <img class="pinterest" src="img/pinterest.svg" alt="" />
-          </a>
-        </li>
+       
       </ul>
     </div>
     <div class="menu">
@@ -248,8 +235,7 @@
               <a
                 href="https://www.instagram.com/imagraphic_promo/"><img width="40px" src="img/instagram.svg" alt="" /></a>
               <a href="https://wa.me/573176428571 "><img width="40px" src="img/whatsapp.png"alt="" /></a>
-              <a
-                href="https://co.pinterest.com/igraficas/?invite_code=624950ea13b548a7b1c680f4787bd4c9&sender=506162583028394334"><img width="40px" src="img/pinterest.svg" alt="" /></a>
+              
             </div>
           </div>
         </div>

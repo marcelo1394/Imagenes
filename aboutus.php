@@ -67,20 +67,11 @@
   <div class="header">
     <ul class="redes">
       <li>
-        <a href="https://www.instagram.com/imagenes_graficas?igshid=di1ufcnwhc4f" target="_blank">
+        <a href="https://www.instagram.com/imagraphic_promo/" target="_blank">
           <img class="instagram" src="img/instagram.svg" alt="Instagram" />
         </a>
       </li>
-      <li>
-        <a href="https://www.facebook.com/imagenesgraficasbicsas/" target="_blank">
-          <img class="facebook" src="img/facebook.svg" alt="Facebook" />
-        </a>
-      </li>
-      <li>
-        <a href="https://co.pinterest.com/igraficas/" target="_blank">
-          <img class="pinterest" src="img/pinterest.svg" alt="Pinterest" />
-        </a>
-      </li>
+      
     </ul>
   </div>
 
@@ -108,7 +99,7 @@
     <section class="hero">
       <div class="container">
         <div class="hero-content">
-          <h1 class="logo">IMAGR<span>APHIC</span></h1>
+          <img width="350px" src="img/LOGO.png" alt="">
           <p class="tagline">
            The factory of great ideas
           </p>
@@ -124,8 +115,8 @@
         </div>
         <div class="about-content">
           <div class="about-text">
-            <p>
-             We are a company focused on the production of promotional products of the best quality. We have more than<strong> 28 years of experience</strong> and we have the support of a large production plant with offset printing processes, textile, screen printing, digital printing, laser engraving, sewing and more.
+            <p>We are a company focused on the production of promotional products of the best quality. We have more than<strong> 36 years of experience</strong> and we have the support of a large production plant with offset printing processes, textile, screen printing, digital printing, laser engraving, sewing and more. We are manufacturer company and we can supply your eco-friendly and gifts products needs
+             
             </p>
 
             <div class="highlight-box">
@@ -254,7 +245,7 @@
         <p class="cta-subtitle">
           Our team is ready to help you 
         </p>
-        <a href="#formulario" class="cta-button">
+        <a href="https://wa.me/573176428571" class="cta-button">
           <i class="fas fa-phone-alt"></i> Contact Us Today
         </a>
       </div>
@@ -309,10 +300,9 @@
           <h4 class="follow">Follow us on:</h4>
           <div class="follow_img">
             <a
-              href="https://www.instagram.com/imagenes_graficas?igshid=di1ufcnwhc4f"><img width="40px" src="img/instagram.svg" alt="" /></a>
-            <a href="https://www.facebook.com/imagenesgraficasbicsas/"><img width="40px" src="img/facebook.svg" alt="" /></a>
-            <a
-              href="https://co.pinterest.com/igraficas/?invite_code=624950ea13b548a7b1c680f4787bd4c9&sender=506162583028394334"><img width="40px" src="img/pinterest.svg" alt="" /></a>
+              href="https://www.instagram.com/imagraphic_promo/"><img width="40px" src="img/instagram.svg" alt="" /></a>
+            <a href="https://wa.me/573176428571"><img width="40px" src="img/whatsapp.png" alt="" /></a>
+            
           </div>
         </div>
       </div>
