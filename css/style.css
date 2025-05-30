@@ -1,5 +1,6 @@
 html {
   box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
 }
 
 *,
@@ -95,7 +96,7 @@ html {
 .menu2 li {
   list-style: none;
   margin: 8px;
-  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
 }
 
 .menu2 li a {
@@ -113,7 +114,8 @@ html {
   border: none;
   color: white;
   font-size: 18px;
-  padding: 10px 20px;
+  font-weight: 600;
+  padding: 10px 30px;
   cursor: pointer;
   border-radius: 50px;
   transition: transform 0.3s ease-in-out;
@@ -202,7 +204,7 @@ html {
   margin: 0 auto;
 }
 
-.bag-item {
+.bag-item1 {
   background-color: white;
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
@@ -212,16 +214,16 @@ html {
   position: relative;
   overflow: hidden;
   transition: all 0.3s ease;
-  border: 2px solid rgba(255, 226, 98, 0.3);
+  border: 2px solid rgba(74, 213, 142, 0.3);
 }
 
-.bag-item:hover {
+.bag-item1:hover {
   transform: scale(1.02);
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
-  border-color: rgba(255, 226, 98, 0.8);
+  border-color: rgba(65, 229, 144, 0.486);
 }
 
-.bag-item::after {
+.bag-item1::after {
   content: "";
   position: absolute;
   top: 0;
@@ -237,10 +239,161 @@ html {
   transition: opacity 0.3s ease;
 }
 
-.bag-item:hover::after {
+.bag-item1:hover::after {
   opacity: 1;
 }
+.bag-item2 {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  border: 2px solid #f6b4ba;
+}
 
+.bag-item2:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  border-color: #eb8f97;
+}
+
+.bag-item2::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 226, 98, 0.1),
+    rgba(255, 226, 98, 0)
+  );
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.bag-item2:hover::after {
+  opacity: 1;
+}
+.bag-item3 {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  border: 2px solid #f5d0ae;
+}
+
+.bag-item3:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  border-color: #f5caa2;
+}
+
+.bag-item3::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 226, 98, 0.1),
+    rgba(255, 226, 98, 0)
+  );
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.bag-item3:hover::after {
+  opacity: 1;
+}
+.bag-item4 {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  border: 2px solid #f5df7f;
+}
+
+.bag-item4:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  border-color: #ffe262;
+}
+
+.bag-item4::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 226, 98, 0.1),
+    rgba(255, 226, 98, 0)
+  );
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.bag-item4:hover::after {
+  opacity: 1;
+}
+.bag-item5 {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  border: 2px solid #65cef8cb;
+}
+
+.bag-item5:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  border-color: #65cef8cb;
+}
+
+.bag-item5::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 226, 98, 0.1),
+    rgba(255, 226, 98, 0)
+  );
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.bag-item5:hover::after {
+  opacity: 1;
+}
 .bag-text {
   font-size: 1.4em;
   font-weight: bold;
@@ -256,48 +409,48 @@ html {
 .item-1 {
   grid-column: span 2;
   grid-row: span 1;
-  background-color: #ffe262;
+  background-color: #dcede3;
 }
 
 .item-2 {
   grid-column: span 2;
   grid-row: span 2;
-  background-color: #fff0a3;
+  background-color: #f9d0d4;
 }
 
 .item-3 {
   grid-column: span 1;
   grid-row: span 2;
-  background-color: #ffea80;
+  background-color: #fee5cd;
 }
 
 .item-4 {
   grid-column: span 1;
   grid-row: span 2;
-  background-color: #fff5bf;
+  background-color: #fcf5bf;
 }
 
 .item-5 {
   grid-column: span 2;
   grid-row: span 1;
-  background-color: #ffed99;
+  background-color: #c3eeff;
 }
 
 /* Efectos hover con tonos más oscuros */
 .item-1:hover {
-  background-color: #ffdd40;
+  background-color: #c1ebd2;
 }
 .item-2:hover {
-  background-color: #ffe880;
+  background-color: #f6b4ba;
 }
 .item-3:hover {
-  background-color: #ffdf5a;
+  background-color: #ffecdafa;
 }
 .item-4:hover {
-  background-color: #ffeda6;
+  background-color: #fce479aa;
 }
 .item-5:hover {
-  background-color: #ffe270;
+  background-color: #65cef8cb;
 }
 .section-divider {
   display: flex;
@@ -340,12 +493,12 @@ html {
 }
 .featured-container {
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 0 auto 55px auto;
 }
 
 .section-header {
   position: relative;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .section-title {
@@ -576,7 +729,6 @@ textarea {
 .formmjs {
   justify-content: center;
   align-items: center;
-  font-family: "Open Sans", sans-serif;
   font-size: 18px;
   font-weight: 200;
   margin-left: 120px;
@@ -603,6 +755,7 @@ textarea {
   border-radius: 30px;
   cursor: pointer;
   font-size: 16px;
+  font-weight: 700;
   width: 60%;
   transition: background-color 0.3s;
 }
@@ -614,6 +767,9 @@ textarea {
 .text_form2 {
   margin-bottom: 20px;
   margin-top: 20px;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: #3c3b3b;
 }
 
 .container_follow {
@@ -624,6 +780,8 @@ textarea {
 .follow {
   margin-top: 20px;
   font-size: 20px;
+  font-weight: 800;
+  color: #3c3b3b;
 }
 
 .follow_img {
