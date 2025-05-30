@@ -61,6 +61,9 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
     />
     <title>Imagrafic</title>
+        <link rel="icon" href="img/favicon.ico" type="img/ico" />
+
+    
   </head>
 
   <body>
@@ -88,10 +91,10 @@
         <div class="derecho_menu">
           <div class="nav">
             <ul class="menu2">
-              <li><a href="#Home">HOME</a></li>
-              <li><a href="products.php">PRODUCTS</a></li>
-              <li><a href="aboutus.php">ABOUT US</a></li>
-              <li><a href="howwemade.php">HOW WE MADE</a></li>
+              <li><a href="index">HOME</a></li>
+              <li><a href="products">PRODUCTS</a></li>
+              <li><a href="aboutus">ABOUT US</a></li>
+              <li><a href="howwemade">HOW WE MADE</a></li>
                 <li>
                 <a href="#formulario"><button id="btnabrir" class="boton primary" >
                   Request a Quote

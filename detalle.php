@@ -37,6 +37,8 @@ $producto = $result->fetch_assoc();
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/detalle.css" />
   <title>Imagrafic/Products/Details</title>
+  <link rel="icon" href="img/favicon.ico" type="img/ico" />
+
 </head>
 
 <body>
@@ -63,10 +65,10 @@ $producto = $result->fetch_assoc();
       <div class="derecho_menu">
         <div class="nav">
           <ul class="menu2">
-            <li><a href="index.php">HOME</a></li>
-            <li><a href="products.php">PRODUCTS</a></li>
-            <li><a href="aboutus.php">ABOUT US</a></li>
-            <li><a href="howwemade.php">HOW WE MADE</a></li>
+            <li><a href="index">HOME</a></li>
+            <li><a href="products">PRODUCTS</a></li>
+            <li><a href="aboutus">ABOUT US</a></li>
+            <li><a href="howwemade">HOW WE MADE</a></li>
           </ul>
         </div>
       </div>
@@ -100,14 +102,7 @@ $producto = $result->fetch_assoc();
       <img src="productsimg/<?= htmlspecialchars($producto['imagen']) ?>.png" alt="">
     </div>
     <div class="product-info">
-      <div class="product-title"><?= ucfirst(
-          strtolower(
-            preg_replace("/[^[:alpha:][:space:]]/u", "", htmlspecialchars($producto['nombre']))
-          )
-        )
-        ?></div>
-
-
+      <div class="product-title"><?= ucfirst(strtolower(preg_replace("/[^[:alpha:][:space:]]/u", "", htmlspecialchars($producto['nombre']))))?></div>
       <div class="product-code">
         CODE
         <?= htmlspecialchars($producto['numero']) ?>

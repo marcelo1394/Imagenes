@@ -217,7 +217,9 @@ $resultado = $conn->query($sql);
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="css/products.css" />
-  <title>Imagrafic/Products</title>
+  <!-- <title>Imagrafic/Products</title> -->
+  <link rel="icon" href="img/favicon.ico" type="img/ico" />
+
 </head>
 
 <body>
@@ -244,10 +246,10 @@ $resultado = $conn->query($sql);
       <div class="derecho_menu">
         <div class="nav">
           <ul class="menu2">
-            <li><a href="index.php">HOME</a></li>
-            <li><a href="products.php">PRODUCTS</a></li>
-            <li><a href="aboutus.php">ABOUT US</a></li>
-            <li><a href="howwemade.php">HOW WE MADE</a></li>
+            <li><a href="index">HOME</a></li>
+            <li><a href="products">PRODUCTS</a></li>
+            <li><a href="aboutus">ABOUT US</a></li>
+            <li><a href="howwemade">HOW WE MADE</a></li>
           </ul>
         </div>
       </div>
