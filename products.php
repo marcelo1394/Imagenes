@@ -26,7 +26,7 @@ $resultado = $conn->query($sql);
 <html lang="en">
 
 <head>
-  
+
   <style>
     .grid-container {
       display: grid;
@@ -208,7 +208,7 @@ $resultado = $conn->query($sql);
       }
 
       .category_izquierda_ul2 {
-        margin-left:110px;
+        margin-left: 110px;
       }
 
     }
@@ -230,7 +230,7 @@ $resultado = $conn->query($sql);
           <img class="instagram" src="img/instagram.svg" alt="" />
         </a>
       </li>
-     
+
     </ul>
   </div>
   <div class="menu">
@@ -309,7 +309,17 @@ $resultado = $conn->query($sql);
               <a href="detalle.php?numero=<?= $fila['numero'] ?>">
                 <img src="productsimg/<?= $fila['imagen'] ?>.png" alt="<?= htmlspecialchars($fila['nombre']) ?>">
               </a>
-              <h3><?= htmlspecialchars($fila['nombre']) ?></h3>
+              <!-- <h3><?= ucfirst(strtolower(htmlspecialchars($fila['nombre']))) ?></h3>   codigo con caracteres -->
+              <h3>
+                <?= ucfirst(
+                  strtolower(
+                    preg_replace("/[^a-zA-ZáéíóúÁÉÍÓÚñÑ\s]/u", "", htmlspecialchars($fila['nombre']))
+                  )
+                )
+                ?>
+              </h3>
+
+
               <!-- <p><?= htmlspecialchars($fila['numero']) ?></p> -->
             </div>
           <?php endwhile; ?>

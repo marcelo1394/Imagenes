@@ -214,15 +214,15 @@
     }
 
     .product-image {
-      flex: 1 1 300px;
-      border: 2px solid #ffe262;
-      padding: 10px;
+      flex: 1 1 100px;
+      /* border: 2px solid #ffe262; */
+      padding: 0px;
       text-align: center;
     }
 
     .product-image img {
-      max-width: 100%;
-      height: auto;
+      width: 350px;
+      height: 400px;
     }
 
     .product-info {
@@ -277,4 +277,10 @@
       .accordion-content img {
         width: 300px;
     }
+    .product-image img {
+      width: 200px;
+      height: 200px;
     }
+    }
+
+    

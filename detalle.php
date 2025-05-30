@@ -86,11 +86,21 @@ $producto = $result->fetch_assoc();
     <a href="#">HOME</a> ›
     <a href="#">Products</a> ›
     <a href="#">Categories</a> ›
-    <a href="#">Bags</a> › 
+    <a href="#">Bags</a> ›
     <!-- <span>Laminated</span> -->
   </div>
   <div class="nombre">
-    <h1><?= htmlspecialchars($producto['nombre']) ?></h1>
+    <!-- <h1><?= ucfirst(strtolower(htmlspecialchars($producto['nombre']))) ?></h1> -->
+    <h1>
+      <?= ucfirst(
+        strtolower(
+          preg_replace("/[^[:alpha:][:space:]]/u", "", htmlspecialchars($producto['nombre']))
+        )
+      )
+      ?>
+    </h1>
+
+
   </div>
 
   <div class="product-container">
@@ -98,15 +108,20 @@ $producto = $result->fetch_assoc();
       <img src="productsimg/<?= htmlspecialchars($producto['imagen']) ?>.png" alt="">
     </div>
     <div class="product-info">
-      <div class="product-title"><?= htmlspecialchars($producto['nombre']) ?></div>
-      <!-- <div class="product-code">Code T10</div> -->
-      
+      <div class="product-title"><?= ucfirst(
+          strtolower(
+            preg_replace("/[^[:alpha:][:space:]]/u", "", htmlspecialchars($producto['nombre']))
+          )
+        )
+        ?></div>
+
+
       <div class="product-code">
         CODE
-      <?=htmlspecialchars($producto['numero']) ?>
+        <?= htmlspecialchars($producto['numero']) ?>
       </div>
       <div class="product-description">
-        <?=htmlspecialchars($producto['descripcion']) ?>
+        <?= htmlspecialchars($producto['descripcion']) ?>
       </div>
 
       <div class="accordion">
@@ -116,22 +131,22 @@ $producto = $result->fetch_assoc();
 
       <div class="accordion">
         <div class="accordion-header">Product details</div>
-        <div class="accordion-content"><?=htmlspecialchars($producto['Product details']) ?></div>
+        <div class="accordion-content"><?= htmlspecialchars($producto['Product details']) ?></div>
       </div>
 
       <div class="accordion">
         <div class="accordion-header">Imprint details</div>
-        <div class="accordion-content"><?=htmlspecialchars($producto['Imprint details']) ?></div>
+        <div class="accordion-content"><?= htmlspecialchars($producto['Imprint details']) ?></div>
       </div>
 
       <div class="accordion">
         <div class="accordion-header">Shipping details</div>
-        <div class="accordion-content"><?=htmlspecialchars($producto['Shipping details']) ?></div>
+        <div class="accordion-content"><?= htmlspecialchars($producto['Shipping details']) ?></div>
       </div>
 
       <!-- <div class="accordion">
         <div class="accordion-header">Legal details</div>
-        <div class="accordion-content"><?=htmlspecialchars($producto['Legal details']) ?></div>
+        <div class="accordion-content"><?= htmlspecialchars($producto['Legal details']) ?></div>
       </div> -->
     </div>
   </div>
