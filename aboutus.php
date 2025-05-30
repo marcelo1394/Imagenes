@@ -61,6 +61,8 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
   <title>Imagrafic/About us</title>
+  <link rel="icon" href="img/favicon.ico" type="img/ico" />
+
 </head>
 
 <body>
@@ -86,10 +88,10 @@
       <div class="derecho_menu">
         <div class="nav">
           <ul class="menu2">
-            <li><a href="index.php">HOME</a></li>
-            <li><a href="products.php">PRODUCTS</a></li>
-            <li><a href="aboutus.php">ABOUT US</a></li>
-            <li><a href="howwemade.php">HOW WE MADE</a></li>
+            <li><a href="index">HOME</a></li>
+            <li><a href="products">PRODUCTS</a></li>
+            <li><a href="aboutus">ABOUT US</a></li>
+            <li><a href="howwemade">HOW WE MADE</a></li>
           </ul>
         </div>
       </div>
