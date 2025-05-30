@@ -96,7 +96,7 @@ html {
 .menu2 li {
   list-style: none;
   margin: 8px;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .menu2 li a {
@@ -212,6 +212,7 @@ html {
   align-items: center;
   justify-content: center;
   position: relative;
+  cursor: pointer;
   overflow: hidden;
   transition: all 0.3s ease;
   border: 2px solid rgba(74, 213, 142, 0.3);
@@ -249,6 +250,7 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
   position: relative;
   overflow: hidden;
   transition: all 0.3s ease;
@@ -287,6 +289,7 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
   position: relative;
   overflow: hidden;
   transition: all 0.3s ease;
@@ -325,6 +328,7 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
   position: relative;
   overflow: hidden;
   transition: all 0.3s ease;
@@ -363,6 +367,7 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
   position: relative;
   overflow: hidden;
   transition: all 0.3s ease;
@@ -532,6 +537,7 @@ html {
   background: white;
   margin: 0 10px;
   padding: 25px;
+  cursor: pointer;
   text-align: center;
   border: 1px solid #eee;
   transition: all 0.3s ease;

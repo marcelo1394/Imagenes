@@ -124,19 +124,19 @@
     
      <div class="gallery-container">
       <div class="bag-item1 item-1">
-        <div class="bag-text">deninbag</div>
+      <div class="bag-text" onclick="window.location.href='products.php?categoria=Bags'">BAGS</div>
       </div>
       <div class="bag-item3 item-3">
-        <div class="bag-text">tote bag</div>
+        <div class="bag-text" onclick="window.location.href='products.php?categoria=Backpacks'">Backpacks</div>
       </div>
       <div class="bag-item4 item-4">
-        <div class="bag-text">deninbag</div>
+        <div class="bag-text" onclick="window.location.href='products.php?categoria=Pouches'" >Pouches</div>
       </div>
       <div class="bag-item2 item-2">
-        <div class="bag-text">lunch bag</div>
+        <div class="bag-text" onclick="window.location.href='products.php?categoria=Tote bags'" >Tote bags</div>
       </div>
       <div class="bag-item5 item-5">
-        <div class="bag-text">lunch bag</div>
+        <div class="bag-text" onclick="window.location.href='products.php?categoria=Drawstring bags'">Drawstring bags</div>
       </div>
     </div>
     <div class="section-divider">
@@ -150,35 +150,35 @@
       </div>
 
       <div class="product-slider">
-        <div class="product-item">
-          <div class="product-image">Small Dunsming Bag</div>
-          <h3 class="product-name">Small Dunsming Bag</h3>
-          <p class="product-status">Real New</p>
+        <div onclick="window.location.href='detalle.php?numero=T81'" class="product-item">
+          <div class="product-image"><img width="150px" src="img/11.png" alt=""></div>
+          <h3 class="product-name">drawstring bag </h3>
+          <p class="product-status">Read More</p>
         </div>
 
         <div class="product-item">
-          <div class="product-image">Trade show Bag</div>
-          <h3 class="product-name">Trade show Bag</h3>
-          <p class="product-status">Real New</p>
+          <div onclick="window.location.href='detalle.php?numero=T02'" class="product-image"><img width="110px" src="productsimg/T02.PNG" alt=""></div>
+          <h3 class="product-name">Small tote bag</h3>
+          <p class="product-status">Read More</p>
         </div>
 
         <div class="product-item">
-          <div class="product-image">Trade show Bag</div>
-          <h3 class="product-name">Trade show Bag</h3>
-          <p class="product-status">Real New</p>
+          <div onclick="window.location.href='detalle.php?numero=LP08'" class="product-image"><img width="150px" src="productsimg/LP08.PNG" alt=""></div>
+          <h3 class="product-name">Notepad plus</h3>
+          <p class="product-status">Read More</p>
         </div>
 
         <div class="product-item">
-          <div class="product-image">Trade show Bag</div>
-          <h3 class="product-name">Trade show Bag</h3>
-          <p class="product-status">Real New</p>
+          <div onclick="window.location.href='detalle.php?numero=T67'" class="product-image"><img width="150px" src="productsimg/T67.PNG" alt=""></div>
+          <h3 class="product-name">Travel restroom</h3>
+          <p class="product-status">Read More</p>
         </div>
 
         <!-- Puedes añadir más productos si necesitas -->
         <div class="product-item">
-          <div class="product-image">Trade show Bag</div>
-          <h3 class="product-name">Trade show Bag</h3>
-          <p class="product-status">Real New</p>
+          <div onclick="window.location.href='detalle.php?numero=T100'"  class="product-image"><img width="150px" src="productsimg/T100.PNG" alt=""></div>
+          <h3 class="product-name">Cosmetic baggie</h3>
+          <p class="product-status">Read More</p>
         </div>
       </div>
     </div>

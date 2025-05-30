@@ -43,20 +43,12 @@ $producto = $result->fetch_assoc();
   <div class="header">
     <ul class="redes">
       <li>
-        <a href="https://www.instagram.com/imagenes_graficas?igshid=di1ufcnwhc4f" target="_blank">
+        <a href="https://www.instagram.com/imagraphic_promo/" target="_blank">
           <img class="instagram" src="img/instagram.svg" alt="Instagram" />
         </a>
       </li>
-      <li>
-        <a href="https://www.facebook.com/imagenesgraficasbicsas/" target="_blank">
-          <img class="facebook" src="img/facebook.svg" alt="Facebook" />
-        </a>
-      </li>
-      <li>
-        <a href="https://co.pinterest.com/igraficas/" target="_blank">
-          <img class="pinterest" src="img/pinterest.svg" alt="Pinterest" />
-        </a>
-      </li>
+     
+     
     </ul>
   </div>
 
