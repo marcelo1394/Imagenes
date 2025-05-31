@@ -255,37 +255,41 @@
      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <script>
-      $(document).ready(function () {
+     $(document).ready(function () {
         $(".product-slider").slick({
-          dots: true,
-          arrows: true,
-          infinite: true,
-          speed: 300,
-          slidesToShow: 4,
-          slidesToScroll: 1,
-          responsive: [
-            {
-              breakpoint: 1024,
-              settings: {
-                slidesToShow: 3,
+            dots: true,
+            arrows: true,
+            infinite: true,
+            speed: 500, // Velocidad de transición (ms)
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            autoplay: true, // Activa el autoplay
+            autoplaySpeed: 3000, // Cambia cada 3 segundos (ajustable)
+            pauseOnHover: true, // Pausa al pasar el mouse
+            responsive: [
+              {
+                breakpoint: 1024,
+                settings: {
+                  slidesToShow: 3,
+                },
               },
-            },
-            {
-              breakpoint: 768,
-              settings: {
-                slidesToShow: 2,
+              {
+                breakpoint: 768,
+                settings: {
+                  slidesToShow: 2,
+                },
               },
-            },
-            {
-              breakpoint: 480,
-              settings: {
-                slidesToShow: 1,
-                arrows: false,
+              {
+                breakpoint: 480,
+                settings: {
+                  slidesToShow: 1,
+                  arrows: false,
+                },
               },
-            },
-          ],
+            ],
+         });
         });
-      });
-    </script>
+      </script>
+    
     </body>
 </html>
