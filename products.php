@@ -246,10 +246,10 @@ $resultado = $conn->query($sql);
       <div class="derecho_menu">
         <div class="nav">
           <ul class="menu2">
-            <li><a href="index">HOME</a></li>
-            <li><a href="products">PRODUCTS</a></li>
-            <li><a href="aboutus">ABOUT US</a></li>
-            <li><a href="howwemade">HOW WE MADE</a></li>
+            <li><a href="index.php">HOME</a></li>
+            <li><a href="products.php">PRODUCTS</a></li>
+            <li><a href="aboutus.php">ABOUT US</a></li>
+            <li><a href="howwemade.php">HOW WE MADE</a></li>
           </ul>
         </div>
       </div>
