@@ -1,7 +1,7 @@
 <?php
 $host = "localhost";
-$usuario = "basedatosigusa";
-$contrasena = "Jdrg0908*/";
+$usuario = "root";
+$contrasena = "";
 $basedatos = "dbimagenes";
 
 // Crear conexión
