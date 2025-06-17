@@ -215,13 +215,13 @@ body {
 .product-image {
   flex: 1 1 100px;
   /* border: 2px solid #ffe262; */
-  padding: 0px;
+  padding: 70px;
   text-align: center;
 }
 
 .product-image img {
-  width: 350px;
-  height: 400px;
+  width: 200px;
+  height: 200px;
 }
 
 .product-info {

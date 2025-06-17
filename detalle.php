@@ -113,7 +113,7 @@ $producto = $result->fetch_assoc();
 
       <div class="accordion">
         <div class="accordion-header">Prices</div>
-        <div class="accordion-content"><img src="imgprices/<?= htmlspecialchars($producto['Prices']) ?>.png" alt=""></div>
+        <div class="accordion-content"><img src="imgprices/<?= htmlspecialchars($producto['Prices']) ?>.PNG" alt=""></div>
       </div>
 
       <div class="accordion">
