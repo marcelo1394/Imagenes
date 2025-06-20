@@ -160,26 +160,26 @@
         </div>
 
         <div class="product-item">
-          <div onclick="window.location.href='detalle.php?numero=T02'" class="product-image"><img width="110px" src="img/T02.PNG" alt=""></div>
+          <div onclick="window.location.href='detalle.php?numero=T02'" class="product-image"><img width="110px" src="img/T02.png" alt=""></div>
           <h3 class="product-name">Small tote bag</h3>
           <p class="product-status">Read More</p>
         </div>
 
         <div class="product-item">
-          <div onclick="window.location.href='detalle.php?numero=LP08'" class="product-image"><img width="150px" src="img/LP08.PNG" alt=""></div>
+          <div onclick="window.location.href='detalle.php?numero=LP08'" class="product-image"><img width="150px" src="img/LP08.png" alt=""></div>
           <h3 class="product-name">Notepad plus</h3>
           <p class="product-status">Read More</p>
         </div>
 
         <div class="product-item">
-          <div onclick="window.location.href='detalle.php?numero=T67'" class="product-image"><img width="150px" src="img/T67.PNG" alt=""></div>
+          <div onclick="window.location.href='detalle.php?numero=T67'" class="product-image"><img width="150px" src="img/T67.png" alt=""></div>
           <h3 class="product-name">Travel restroom</h3>
           <p class="product-status">Read More</p>
         </div>
 
         <!-- Puedes añadir más productos si necesitas -->
         <div class="product-item">
-          <div onclick="window.location.href='detalle.php?numero=T100'"  class="product-image"><img width="150px" src="ñimg/T100.PNG" alt=""></div>
+          <div onclick="window.location.href='detalle.php?numero=T100'"  class="product-image"><img width="150px" src="img/T100.png" alt=""></div>
           <h3 class="product-name">Cosmetic baggie</h3>
           <p class="product-status">Read More</p>
         </div>
@@ -205,7 +205,7 @@
               </div>
             </div>
           <?php
-            }}        
+            }  }      
           ?>
           <h1 class="text_form2">Subscribe now!</h1>
             

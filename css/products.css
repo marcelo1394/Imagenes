@@ -219,50 +219,102 @@ html {
   height: 250px;
 }
 
-.category_izquierda_ul1 {
-  display: flex;
-  font-size: 30px;
-  gap: 8px;
+.sidebar-categories {
+  width: 250px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 15px;
 }
 
-.category_izquierda_ul1 li {
-  list-style: none;
-  margin: 40px 10px 40px 0px;
-  font-family: Open Sans Light;
-  /* POR DESCARGAR */
-}
-
-.category_izquierda_ul1 a {
-  color: black;
-  text-decoration: none;
-}
-
-.category_izquierda_ul1 li:not(:last-child)::after {
-  content: "|";
-  margin-left: 65px;
-  color: #ffe262;
-}
-
-.category_izquierda_p {
-  border-bottom: 1px solid #7c727297;
+/* Título de categorías */
+.categories-title {
+  color: #2c3e50;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 20px 0 15px;
   padding-bottom: 10px;
-  font-weight: bolder;
-  font-size: 30px;
+  border-bottom: 2px solid #eaeaea;
 }
 
-.category_izquierda_ul2 {
-  margin-top: 10px;
-  font-size: 30px;
-}
-
-.category_izquierda_ul2 li {
-  margin: 15px auto;
+/* Menú principal */
+.main-menu {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-.category_izquierda_ul2 li a {
+/* Menú de categorías */
+.categories-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Enlaces generales */
+.nav-link,
+.category-link {
+  display: block;
+  padding: 10px 15px;
   text-decoration: none;
-  color: black;
+  color: #000000;
+  border-radius: 4px;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+  margin-bottom: 5px;
+}
+
+/* Enlace HOME especial */
+.home-link {
+  font-weight: bold;
+  font-size: 1.8rem;
+  text-align: center;
+
+  color: #ffffff;
+  background-color: #f7e869ea;
+}
+
+/* Efectos hover */
+.category-link:hover {
+  background-color: #e9ecef;
+  color: #000000ea;
+  transform: translateX(5px);
+}
+
+/* Enlace activo (puedes añadir .active dinámicamente con JS) */
+.category-link.active {
+  background-color: #3498db;
+  color: white;
+  font-weight: 500;
+}
+
+/* Responsive para móviles */
+@media (max-width: 768px) {
+  .sidebar-categories {
+    width: 100%;
+    margin: 0;
+    border-radius: 0;
+    box-shadow: none;
+    padding: 15px;
+  }
+
+  .categories-menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+
+  .category-link {
+    padding: 8px 12px;
+    margin-bottom: 0;
+    background-color: #e9ecef;
+    border-radius: 20px;
+    font-size: 0.9rem;
+  }
 }
 
 .category_derecha {

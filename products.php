@@ -287,21 +287,51 @@ $resultado = $conn->query($sql);
 
   <div class="category">
     <div class="category_izquierda">
-      <ul class="category_izquierda_ul1">
-        <li><a href="index.php">HOME</a></li>
-        <!-- <li><a href="products.php">PRODUCTS</a></li> -->
-      </ul>
-      <p class="category_izquierda_p">CATEGORIES</p>
-      <ul class="category_izquierda_ul2">
-        <li><a href="products.php?categoria=Bags">Bags</a></li>
-        <li><a href="products.php?categoria=Backpacks">Backpacks</a></li>
-        <li><a href="products.php?categoria=Pouches">Pouches</a></li>
-        <li><a href="products.php?categoria=Tote bags">Tote bags</a></li>
-        <li><a href="products.php?categoria=Drawstring bags">Drawstring bags</a></li>
-        <li><a href="products.php?categoria=Baskets">Baskets</a></li>
-        <li><a href="products.php?categoria=Cloths">Cloths</a></li>
-        <!-- <li><a href="products.php?categoria=Clothing">Clothing</a></li> -->
-      </ul>
+     <nav class="sidebar-nav">
+        <ul class="main-menu">
+          <li><a href="index.php" class="nav-link home-link">HOME</a></li>
+        </ul>
+
+        <h3 class="categories-title">CATEGORIES</h3>
+
+        <ul class="categories-menu">
+          <li>
+            <a href="products.php?categoria=Bags" class="category-link">Bags</a>
+          </li>
+          <li>
+            <a href="products.php?categoria=Backpacks" class="category-link"
+              >Backpacks</a
+            >
+          </li>
+          <li>
+            <a href="products.php?categoria=Pouches" class="category-link"
+              >Pouches</a
+            >
+          </li>
+          <li>
+            <a href="products.php?categoria=Tote bags" class="category-link"
+              >Tote bags</a
+            >
+          </li>
+          <li>
+            <a
+              href="products.php?categoria=Drawstring bags"
+              class="category-link"
+              >Drawstring bags</a
+            >
+          </li>
+          <li>
+            <a href="products.php?categoria=Baskets" class="category-link"
+              >Baskets</a
+            >
+          </li>
+          <li>
+            <a href="products.php?categoria=Cloths" class="category-link"
+              >Cloths</a
+            >
+          </li>
+        </ul>
+      </nav> 
     </div>
     <div class="category_derecha">
       <?php if ($resultado && $resultado->num_rows > 0): ?>
