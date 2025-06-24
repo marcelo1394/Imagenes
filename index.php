@@ -122,7 +122,7 @@
       <a href=""><img class="imagen3" src="img/7.png" alt="" /></a>
     </div>
     <div class="texini">
-      <img width="100%" src="img/10.png" alt="" />
+      <img width="100%" src="img/info.png" alt="" />
     </div>
     
      <div class="gallery-container">

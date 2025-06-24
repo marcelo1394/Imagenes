@@ -182,12 +182,13 @@ html {
   width: 95%;
   height: 90%;
   border-radius: 20px;
-  margin: 10px;
+  margin: 15px;
 }
 
 .texini {
   display: flex;
   width: 85%;
+  justify-items: center;
   height: 350px;
   margin: 0 auto 30px;
   border-top: 3px solid #7c727297;
