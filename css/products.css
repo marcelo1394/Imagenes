@@ -302,6 +302,17 @@ html {
     padding: 15px;
   }
 
+   
+
+  .home-link {
+  font-weight: bold;
+  font-size: 1.8rem;
+  text-align: center;
+  color: #ffffff;
+  background-color: #f7e869ea;
+  width: 150px;
+  }
+
   .categories-menu {
     display: flex;
     flex-wrap: wrap;
@@ -635,10 +646,24 @@ textarea {
     width: 100% !important;
     height: 150px;
   }
+
+  .category_izquierda {
+    width: 20%;
+    height: 250px;
+    margin-left: 90px;
+  };
+  /* .sidebar-nav {
+    justify-content: center;
+
+  } */
+
 }
 @media (max-width: 480px) {
   .izquierdo_imagen {
     max-height: 220px;
     width: auto;
   }
+  
+  
+ 
 }
